@@ -4,6 +4,12 @@ const port = 3000;
 const morgan = require('morgan')
 const route = require('./route')
 
+const db  = require('./config/db');
+
+// CONNECT DB 
+
+db.connect();
+
 // SET VIEW HANDLEBAR
 const hbs = require('express-handlebars')
 app.engine('.hbs', hbs.engine({
