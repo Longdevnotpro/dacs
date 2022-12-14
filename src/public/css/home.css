@@ -1,0 +1,120 @@
+.search-content {
+    margin: auto;
+    background-color: #eaeaea;
+        box-shadow: 0 1px 8px 0 rgb(0 0 0 / 50%);
+    -webkit-box-shadow: 0 1px 8px 0 rgb(0 0 0 / 30%);
+        -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+    width: 70%;
+    height: 130px;
+    border-radius: 1px;
+}
+
+.input-search-content input:focus {
+    outline: none;
+}
+
+.input-search-content {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+}
+
+.input-search-content input {
+    border: none;
+    height: 40px;
+    width: 91%;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.input-search-content .btn-search {
+    background-color: var(--btn-color);
+    font-size: 25px;
+    height: 40px;
+    width: 70%;
+    cursor: pointer;
+    border-radius: 15px;
+    position: relative;
+}
+
+.input-search-content .btn-search i{
+    position: absolute;
+    right: 0;
+    line-height: 40px;
+    padding-right: 15px;
+}
+
+.btn {
+    text-align: center;
+    line-height: 2.5;
+    display: flex;
+    justify-content: center;
+}
+
+.btn label{
+    margin: 0 25px;
+}
+
+/* start hiden-search */
+.hiden-search-none{
+    display: none;
+}
+
+.hiden-search {
+    display: flex;
+    justify-content: center;
+}
+
+.hiden-search select {
+    margin: 0 20px;
+}
+/* end hiden-search */
+
+.container-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 20px;
+}
+
+.content-1{
+    width: 60%;
+}
+
+
+.content-function > i{
+    margin-top: 3px;
+    margin-right: 5px;
+    
+}
+
+.content-2{
+    background-color: var(--content-color);
+    height: 681px;
+    height: 100%;
+    width: 30%;
+    border-radius: 2px;
+    text-align: center;
+    font-weight: 700;
+    padding: 10px
+}
+
+.content-2-slide{
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+}
+
+.content-2-slide > img{
+    height: 150px;
+    width: 40%;
+    border-radius: 5px;
+}
+
+.content-2-slide > span{
+    width: 50%;
+    margin-left: 5%;
+    
+}

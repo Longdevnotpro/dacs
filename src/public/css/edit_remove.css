@@ -1,0 +1,113 @@
+.search-content {
+    margin: auto;
+    background-color: var(--slide-color);
+    width: 90%;
+    height: 120px;
+    border-radius: 15px;
+}
+
+.input-search-content input:focus {
+    outline: none;
+}
+
+.input-search-content {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.input-search-content input {
+    width: 30%;
+    height: 50%;
+    border: none;
+    /* border: 2px solid; */
+    border-radius: 15px;
+    padding-left: 10px;
+    position: relative;
+}
+
+.input-search-content .btn-search {
+    background-color: var(--btn-color);
+    width: 30px;
+    text-align: center;
+    line-height: 1.65;
+    /* border: 2px solid; */
+    border-radius: 15px;
+    position: absolute;
+    left: 61.5%;
+}
+
+.btn {
+    text-align: center;
+    line-height: 2.5;
+}
+
+.btn button {
+    height: 30px;
+    width: 13%;
+    background-color: var(--btn-color);
+}
+
+
+.content2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.content2 .show-text {
+    width: 60%;
+    height: 100%;
+    /* text-align: center; */
+    border-radius: 15px;
+}
+
+.edit-delete{
+    justify-content: flex-end;
+}
+
+.edit-delete .function-box{
+    margin: 0 7px;
+}
+
+
+
+.content2 .history {
+    width: 30%;
+    height: 500px;
+    height: 100%;
+    background-color: var(--content-color);
+    text-align: center;
+    margin-left: 130px;
+    /* border: 2px solid #333; */
+    border-radius: 15px;
+}
+
+.content2 .history textarea{
+    width: 70%;
+    margin-top: 20px;
+    padding-left: 5px;
+    border-radius: 10px;
+    /* border: 2px solid #333; */
+}
+
+
+.content2 .history input{
+    height: 30px;
+    width:70%;
+    margin-top: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    /* border: 1px solid #333; */
+    border: none;
+}
+
+.content2 .history input:focus {
+    outline: none;
+}
+
+.content2 .history textarea:focus{
+    outline: none;
+}

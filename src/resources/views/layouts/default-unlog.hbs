@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="icon" type="image/x-icon" href="/img/logo.png" />
+    <script src="https://kit.fontawesome.com/50a3c67631.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="wrap">
+
+    {{> header-unlog}}
+
+    {{{body}}}
+
+    {{> footer}}
+
+    </div>
+
+    <script>
+        function clickShow() {
+            var x = document.getElementById("hiden-search-none");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>
