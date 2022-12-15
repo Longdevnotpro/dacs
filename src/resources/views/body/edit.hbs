@@ -10,22 +10,55 @@
         <a href="/home/admin" style="text-decoration: none; color: black">Admin /</a>
         <a href="#" style="text-decoration: none; color: black">Thêm điều khoản /</a>
     </div>
+
     <form class="add" method="POST" action="/home/admin/store">
-        <textarea type="text" name="content" id="content" cols="30" rows="10" placeholder="Nhập vào nội dung...." style="max-width: 100%;" value="{{law.content}}"></textarea>
-        <input type="text" id="summarykey" name="summarykey" required placeholder="Nhập vào summaryKey" value="{{law.summarykey}}" />
-        <input type="text" id="chuong" name="chuong" required placeholder="Nhập vào Chương" value="{{law.chuong}}" />
-        <input type="text" id="dieu" name="dieu" required placeholder="Nhập vào Điều" value="{{law.dieu}}" />
-        <input type="text" id="muc" name="muc" required placeholder="Nhập vào Mục" value="{{law.muc}}" />
-        <input type="text" id="khoan" name="khoan" required placeholder="Nhập vào Khoản" value="{{law.khoan}}" />
-        <input type="text" id="priceabove" name="priceabove" required placeholder="Nhập vào Mức Phạt trên" value="{{law.priceabove}}" />
-        <input type="text" id="pricebelow" name="pricebelow" required placeholder="Nhập vào Mức Phạt dưới" value="{{law.pricebelow}}" />    
-        <div class="btn">
-            <a href="/home/admin">
-                <input style="background-color: rgb(191, 180, 180); cursor: pointer; margin-bottom: 25px; width: 150px" type="button" value="Thoát" />
-            </a>
-        
-            <input style="background-color: rgb(191, 180, 180); cursor: pointer; width: 150px; margin-left: 20px;" type="submit" value="Thêm Văn bản" />
-        
+        <h1 style="margin-bottom: 20px">Chỉnh sửa điều khoản</h1>
+        <div class="form-group">
+            <label for="summarykey">Summarykey:</label>
+            <textarea type="text" class="form-control" id="summarykey" name="summarykey">{{law.summarykey}}</textarea>
         </div>
+
+        <div class="form-group">
+            <label for="content">Content:</label>
+            <textarea type="text" class="form-control" id="content" name="content">{{law.content}}</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="chuong">Chương:</label>
+            <input type="text" class="form-control" id="chuong" name="chuong" value="{{law.chuong}}">
+        </div>
+
+        <div class="form-group">
+            <label for="khoan">Khoản:</label>
+            <input type="text" class="form-control" id="khoan" name="khoan" value="{{law.khoan}}">
+        </div>
+
+        <div class="form-group">
+            <label for="dieu">Điều:</label>
+            <input type="text" class="form-control" id="dieu" name="dieu" value="{{law.dieu}}">
+        </div>
+
+        <div class="form-group">
+            <label for="muc">Mục:</label>
+            <input type="text" class="form-control" id="muc" name="muc" value="{{law.muc}}">
+        </div>
+
+        <div class="form-group">
+            <label for="priceabove">Priceabove:</label>
+            <input type="text" class="form-control" id="priceabove" name="priceabove" value="{{law.priceabove}}">
+        </div>
+
+        <div class="form-group">
+            <label for="pricebelow">Pricebelow:</label>
+            <input type="text" class="form-control" id="pricebelow" name="pricebelow" value="{{law.pricebelow}}">
+        </div>
+        
+        <a style="text-decoration: none;" href="/home/admin">
+            <input style="background-color: rgb(191, 180, 180); cursor: pointer; margin-bottom: 25px; width: 150px" type="button" value="Thoát" />
+        </a>
+        
+        <input style="background-color: rgb(191, 180, 180); cursor: pointer; width: 150px; margin-left: 20px;" type="submit" value="Update" />
     </form>
+
+
 </div>
