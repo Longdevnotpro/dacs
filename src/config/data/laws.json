@@ -1,0 +1,18 @@
+[{
+  "_id": {
+    "$oid": "639abd670f67405303f8abbf"
+  },
+  "summarykey": "QUY ĐỊNH CHUNG",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639ace000f67405303f8abc8"
+  },
+  "summarykey": "QUY ĐỊNH CHUNG 2"
+}]
