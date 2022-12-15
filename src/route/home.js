@@ -4,13 +4,13 @@ var router = express.Router();
 
 var homeController = require('../app/controllers/HomeController')
 
-router.use('/admin/add',homeController.add)
+router.get('/admin/add',homeController.add)
 
-router.use('/profile',homeController.setting_profile)
+router.get('/profile',homeController.setting_profile)
 
-router.use('/admin', homeController.admin)
-router.use('/newpara',homeController.newpara)
+router.get('/admin', homeController.admin)
+router.get('/newpara',homeController.newpara)
 
-router.use('/',homeController.show)
+router.get('/',homeController.show)
 
 module.exports = router;

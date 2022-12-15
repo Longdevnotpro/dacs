@@ -4,6 +4,6 @@ var router = express.Router();
 
 var registerController = require('../app/controllers/RegisterController')
 
-router.use('/', registerController.register)
+router.get('/', registerController.register)
 
 module.exports = router;

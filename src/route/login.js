@@ -4,6 +4,6 @@ var router = express.Router();
 
 var loginController = require('../app/controllers/LoginController')
 
-router.use('/',loginController.dangnhap)
+router.get('/',loginController.dangnhap)
 
 module.exports = router;

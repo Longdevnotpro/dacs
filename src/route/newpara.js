@@ -4,6 +4,6 @@ var router = express.Router();
 
 var newparaController = require('../app/controllers/NewparaController')
 
-router.use('/',newparaController.show)
+router.get('/',newparaController.show)
 
 module.exports = router;

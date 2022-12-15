@@ -1,4 +1,105 @@
-<div style="height: 1000px;">
+<div class="container js-modalContainer " style="height: 1000px;">
+    <!-- slide show  -->
 
-    
+    <!-- start search law -->
+    <div class="road" style="margin: 15px 0 0 15px;">
+        <i class="fa-solid fa-house"></i>
+        <a href="#" style="text-decoration: none; color: black">Trang chủ /</a>
+        <a href="#" style="text-decoration: none; color: black">Văn bản mới /</a>
+    </div>
+    <div class="search-content">
+        <div class="input-search-content">
+            <div class="btn-search">
+                <input type="text" placeholder="Nhập nội dung tìm kiếm" />
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="btn">
+            <span><i class="fa-solid fa-filter"></i>Tìm kiếm nâng cao</span>
+            <label for="">
+                <input type="radio" value="1" name="select"> Tất cả
+            </label>
+            <label for="">
+                <input type="radio" value="1" name="select"> Tiêu đề
+            </label>
+            <label for="">
+                <input type="radio" value="1" name="select"> Số hiệu văn bản
+            </label>
+            <div style="cursor: pointer;" onclick="clickShow()">
+                <span>Thu gọn</span>
+                <i class="fa-solid fa-caret-up"></i>
+            </div>
+        </div>
+        <div id="hiden-search-none" class="hiden-search-none">
+            <div class="hiden-search">
+                <select id="chương" name="Chương">
+                    <option value="0">Chọn Chương:</option>
+                    <option value="1">Chương 1</option>
+                    <option value="2">Chương 2</option>
+                    <option value="3">Chương 3</option>
+                </select>
+                <select id="điều" name="Điều">
+                    <option value="">Chọn Điều:</option>
+                    <option value="1">Điều 1</option>
+                    <option value="2">Điều 2</option>
+                    <option value="3">Điều 3</option>
+                </select>
+                <select id="khoản" name="Khoản">
+                    <option value="0">Chọn Khoản:</option>
+                    <option value="1">Khoản 1</option>
+                    <option value="2">Khoản 2</option>
+                    <option value="3">Khoản 3</option>
+                </select>
+                <select id="mục" name="Mục">
+                    <option value="0">Chọn Mục:</option>
+                    <option value="1">Mục 1</option>
+                    <option value="2">Mục 2</option>
+                    <option value="3">Mục 3</option>
+                </select>
+                <select id="mức phạt" name="Mức Phạt">
+                    <option value="0">Chọn Mức Phạt:</option>
+                    <option value="1">Mức Phạt 1</option>
+                    <option value="2">Mức Phạt 2</option>
+                    <option value="3">Mức Phạt 3</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container-content" style="display: flex; justify-content: center" >
+        <div class="content-1" id="content-1">
+            {{#each law }}
+            <div class="container-showpara">
+                <div class="container-showpara-content">
+                    <span style="font-weight: 700;">
+                        {{this.summarykey}}
+                    </span>
+                    <div>
+                        <h4 style="font-weight: 300">Ngày tạo: {{this.createAt}}</h4>
+                        <h4 style="font-weight: 300">Ngày cập nhật:</h4>
+                        <h4 style="font-weight: 300">Hiệu lực:</h4>
+                        <h4 style="font-weight: 300">Áp dụng:</h4>
+
+                    </div>
+                </div>
+
+                <div class="container-showpara-function">
+                    <div class="function-div">
+                        <i class="fa-solid fa-arrows-to-circle"></i>
+                        <h4>Nội dung</h4>
+                    </div>
+                    <div class="function-div">
+                        <i class="fa-solid fa-download"></i>
+                        <h4>Tải Xuống</h4>
+                    </div>
+                    <div class="function-div">
+                        <i class="fa-solid fa-align-justify"></i>
+                        <h4>Văn bản liên quan</h4>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+
+        </div>
+
+    </div>
 </div>
