@@ -23,7 +23,12 @@ class HomeController{
     }
 
     newpara(req,res){
-        res.render('body/newpara', {layout: 'home.hbs'})       
+        Law.find({}).then((law) => {
+					res.render('body/newpara', {
+						layout: 'home.hbs',
+						law: multipleMongooseToObject(law),
+					});
+				});      
     }
 
     admin(req,res){
