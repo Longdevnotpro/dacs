@@ -2,9 +2,6 @@ const Law = require('../models/Law')
 const {multipleMongooseToObject} = require('../../util/mogoose')
 const {mongooseToObject} = require('../../util/mogoose')
 
-
-
-
 class HomeController{
 
     // 
