@@ -35,7 +35,7 @@ i {
     /* justify-content: center; */
     align-items: center;
     border-radius: 30px;
-    background: #e0e0e0;
+    /* background: #e0e0e0; */
     box-shadow: 15px 15px 30px #bebebe,
         -15px -15px 30px #ffffff;
 }
