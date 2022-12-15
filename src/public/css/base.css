@@ -212,7 +212,6 @@ input:checked+.slider:before {
 /*  container */
 .container {
     padding-top: 100px;
-    /* background-color: var(--wrap-color); */
 }
 
 .container-showpara {
@@ -221,7 +220,6 @@ input:checked+.slider:before {
     -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
     max-height: 100%;
     width: 100%;
-    /* background-color: var(--content-color); */
     padding: 10px 5px;
     margin-bottom: 2.5%;
     border-radius: 1px;
@@ -229,6 +227,8 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
+    color: black;
 }
 
 .container-showpara-content{
@@ -262,6 +262,10 @@ input:checked+.slider:before {
 .function-div:hover{
     color: rgb(161, 103, 103);
     cursor: pointer;
+}
+
+.function-div h4{
+    font-weight: 500;
 }
 
 .content-showpara {
