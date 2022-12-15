@@ -16,9 +16,10 @@
 .add {
     width: 30%;
     height: fit-content;
+    
     background-color: var(--content-color);
     text-align: center;
-    margin-left: 30%;
+    margin-left: 37.5%;
     border-radius: 15px;
 }
 
