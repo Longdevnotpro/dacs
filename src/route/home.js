@@ -4,6 +4,8 @@ var router = express.Router();
 
 var homeController = require('../app/controllers/HomeController')
 
+router.use('/admin/add',homeController.add)
+
 router.use('/profile',homeController.setting_profile)
 
 router.use('/admin', homeController.admin)

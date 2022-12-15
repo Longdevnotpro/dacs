@@ -218,22 +218,48 @@ input:checked+.slider:before {
     max-height: 100%;
     width: 100%;
     background-color: var(--content-color);
-    padding-bottom: 4%;
+    padding: 10px 5px;
     margin-bottom: 2.5%;
     /* border: 2px solid #333; */
     border-radius: 1px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.container-showpara-content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.container-showpara-function{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
 
 .container-showpara a{  
         text-decoration: none;
         color:black;    
 }
 
+.function-div{
+    display: flex;
+    width: fit-content;
+    padding: 5px 8px;
+    background-color: #dad8d8;
+    box-shadow: 0 0 0;
+}
 
 .content-showpara {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .content-showpara>span {
@@ -252,32 +278,7 @@ input:checked+.slider:before {
 .content-showpara ul li{
     font-weight: 400;
 }
-.content-function {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    margin-top: 9px;
-    justify-content: space-around;
 
-}
-
-
-.function-box {
-    display: flex;
-    width: 16.5%;
-    background-color: var(--btn-color);
-    justify-content: center;
-    padding: 2px 0;
-    border-radius: 1px;
-
-}
-
-.function-box>button {
-    padding: 1px 5px;
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
 
 /* Start Slide */
 .container-slide {
