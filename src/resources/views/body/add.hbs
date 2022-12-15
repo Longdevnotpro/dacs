@@ -10,9 +10,9 @@
         <a href="/home/admin" style="text-decoration: none; color: black">Admin /</a>
         <a href="#" style="text-decoration: none; color: black">Thêm điều khoản /</a>
     </div>
-    <div class="add">
-        <textarea name="dgyk" id="dgyk" cols="30" rows="10" placeholder="Nhập vào nội dung...." style="max-width: 100%;"></textarea>
-        <input type="text" name="summaryKey" required placeholder="Nhập vào summaryKey" />
+    <form class="add" method="POST" action="/home/admin/store">
+        <textarea name="content" id="dgyk" cols="30" rows="10" placeholder="Nhập vào nội dung...." style="max-width: 100%;"></textarea>
+        <input type="text" name="summarykey" required placeholder="Nhập vào summaryKey" />
         <input type="text" name="chuong" required placeholder="Nhập vào Chương" />
         <input type="text" name="dieu" required placeholder="Nhập vào Điều" />
         <input type="text" name="muc" required placeholder="Nhập vào Mục" />
@@ -24,8 +24,8 @@
                 <input style="background-color: rgb(191, 180, 180); cursor: pointer; margin-bottom: 25px; width: 150px" type="button" value="Thoát" />
             </a>
         
-            <input style="background-color: rgb(191, 180, 180); cursor: pointer; width: 150px; margin-left: 20px;" type="button" value="Thêm Văn bản" />
+            <input style="background-color: rgb(191, 180, 180); cursor: pointer; width: 150px; margin-left: 20px;" type="submit" value="Thêm Văn bản" />
         
         </div>
-    </div>
+    </form>
 </div>

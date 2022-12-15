@@ -3,6 +3,18 @@
     "$oid": "639abd670f67405303f8abbf"
   },
   "summarykey": "QUY ĐỊNH CHUNG",
+  "chuong": "1",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "1",
+  "khoan ": "11",
+  "muc": "1",
+  "priceabove": "1",
+  "pricebelow": "1"
+},{
+  "_id": {
+    "$oid": "639b0e2dd69433dea5dbf341"
+  },
+  "summarykey": "HÀNH VI VI PHẠM HÀNH CHÍNH, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ",
   "chuong": "",
   "content": "Nghị định này quy định về hành vi vi phạm ",
   "dieu": "",
@@ -12,7 +24,99 @@
   "pricebelow": ""
 },{
   "_id": {
-    "$oid": "639ace000f67405303f8abc8"
+    "$oid": "639b0e2dd69433dea5dbf342"
   },
-  "summarykey": "QUY ĐỊNH CHUNG 2"
+  "summarykey": "HÀNH VI VI PHẠM HÀNH CHÍNH, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b0e2dd69433dea5dbf343"
+  },
+  "summarykey": "HÀNH VI VI PHẠM HÀNH CHÍNH, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b0e2dd69433dea5dbf344"
+  },
+  "summarykey": "HÀNH VI VI PHẠM HÀNH CHÍNH, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b0ec2d69433dea5dbf346"
+  },
+  "summarykey": "HÀNH VI VI PHẠM HÀNH CHÍNH, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b0ec2d69433dea5dbf347"
+  },
+  "summarykey": "HÀNH VI VI PHẠM HÀNH CHÍNH, HÌNH THỨC XỬ PHẠT VÀ BIỆN PHÁP KHẮC PHỤC HẬU QUẢ",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b0ec2d69433dea5dbf348"
+  },
+  "summarykey": "QUY ĐỊNH CHUNG",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b0ec2d69433dea5dbf349"
+  },
+  "summarykey": "QUY ĐỊNH CHUNG",
+  "chuong": "",
+  "content": "Nghị định này quy định về hành vi vi phạm ",
+  "dieu": "",
+  "khoan ": "",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": ""
+},{
+  "_id": {
+    "$oid": "639b347c53df35fd874a75c5"
+  },
+  "summarykey": "QUY DINH CHUNG",
+  "content": "dieu luat can chinh sua",
+  "chuong": "KHONG BIET",
+  "khoan": "NOT CARE",
+  "dieu": "KHONG BIET",
+  "muc": "KH CARE",
+  "priceabove": "1",
+  "pricebelow": "1",
+  "__v": 0
 }]

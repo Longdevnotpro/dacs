@@ -1,5 +1,10 @@
 const Law = require('../models/Law')
 const {multipleMongooseToObject} = require('../../util/mogoose')
+const {mongooseToObject} = require('../../util/mogoose')
+
+
+
+
 class HomeController{
 
     // 
@@ -44,6 +49,24 @@ class HomeController{
 
     add(req,res){
         res.render('body/add',{layout: 'home.hbs'})
+    }
+
+    store(req, res){
+        const law = new Law(req.body);
+
+        law.save();
+        res.redirect('/home/admin')
+    }
+
+    edit(req,res){
+        Law.findById(req.params.id)
+            .then(law  => {
+                res.render('body/edit',
+                {
+                    layout: 'home.hbs', 
+                    law:mongooseToObject(law) 
+                })
+            })
     }
     
 }

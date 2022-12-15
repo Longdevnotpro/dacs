@@ -10,6 +10,8 @@ const db  = require('./config/db');
 
 db.connect();
 
+app.use(express.urlencoded({ extended: true }))
+
 // SET VIEW HANDLEBAR
 const hbs = require('express-handlebars')
 app.engine('.hbs', hbs.engine({
