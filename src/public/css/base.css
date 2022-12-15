@@ -229,6 +229,7 @@ input:checked+.slider:before {
     justify-content: space-between;
     background-color: white;
     color: black;
+    opacity: 0.9;
 }
 
 .container-showpara-content{
