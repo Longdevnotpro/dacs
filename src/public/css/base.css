@@ -217,7 +217,7 @@ input:checked+.slider:before {
 .container-showpara {
     max-height: 100%;
     width: 100%;
-    background-color: var(--content-color);
+    /* background-color: var(--content-color); */
     padding: 10px 5px;
     margin-bottom: 2.5%;
     /* border: 2px solid #333; */
