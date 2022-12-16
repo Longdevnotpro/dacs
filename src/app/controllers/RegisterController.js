@@ -1,11 +1,18 @@
-class RegisterController{
+const User = require('../models/User');
 
-    // 
-    register(req, res) {
-        res.render('body/register',{layout: 'register.hbs'})
-    }
+class RegisterController {
+	//
+	register(req, res) {
+		res.render('body/register', { layout: 'register.hbs' });
+	}
 
-    
+    //
+	store(req, res) {
+		const user = new User(req.body);
+
+		user.save();
+		res.redirect('/login');
+	}
 }
 
-module.exports = new RegisterController;
+module.exports = new RegisterController();
