@@ -65,6 +65,16 @@ class HomeController{
                 })
             })
     }
+
+    update(req,res){
+        Law.updateOne({_id: req.params.id}, req.body)
+            .then(() => res.redirect('/home/admin'))
+    }
+
+    delete(req,res){
+        Law.deleteOne({_id: req.params.id},req.body)
+            .then(() => res.send('done'))
+    }
     
 }
 

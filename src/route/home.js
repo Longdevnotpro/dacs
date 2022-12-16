@@ -5,6 +5,9 @@ var router = express.Router();
 
 var homeController = require('../app/controllers/HomeController')
 
+
+router.put('/admin/edit/:id', homeController.update)
+
 router.post('/admin/store',homeController.store)
 
 router.get('/admin/:id/edit',homeController.edit)

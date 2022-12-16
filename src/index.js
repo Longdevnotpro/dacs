@@ -3,12 +3,18 @@ const app = express();
 const port = 3000;
 const morgan = require('morgan')
 const route = require('./route')
-
+const methodOverride = require('method-override')
 const db  = require('./config/db');
 
 // CONNECT DB 
 
 db.connect();
+
+// use middleware to call function put patch deleta,... 
+
+app.use(methodOverride('_method'))
+
+// parse body 
 
 app.use(express.urlencoded({ extended: true }))
 
