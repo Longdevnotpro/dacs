@@ -1,10 +1,11 @@
+
 <div class="container">
     <div class="img">
         <img class="wave" src="/img/wave.png" />
         <img src="/img/logo.png" />
     </div>
     <div class="login-content">
-        <form action="">
+        <form method="GET" action="/login/check">
             <div class="form">
                 <h2 class="title">Welcome</h2>
                 <div class="input-div one">
@@ -30,7 +31,7 @@
                 <div class="show-pw">
                     <input type="checkbox" onclick="myFunction()" /> Show Password
                 </div>
-                <button class="btn" id="btn-login" onclick="login()">Login</button>
+                <button class="btn" id="btn-login" type="submit">Login</button>
 
 
                 <p>
