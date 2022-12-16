@@ -70,6 +70,19 @@
             }
         }
            // End Hotline Contact
+           
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.2.min.js">
+    //Start Scroll Top
+        const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+    //End Scroll Top
     </script>
 
 </body>
