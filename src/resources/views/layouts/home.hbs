@@ -69,20 +69,25 @@
                 x.style.display = "block";
             }
         }
-           // End Hotline Contact
+        // End Hotline Contact
            
-    </script>
-    <script src="https://code.jquery.com/jquery-3.6.2.min.js">
-    //Start Scroll Top
-        const scrollToTop = () => {
-                const c = document.documentElement.scrollTop || document.body.scrollTop;
-                if (c > 100) {
-                    window.requestAnimationFrame(scrollToTop);
-                    window.scrollTo(0, c - c / 8);
-                }
-            };
-            scrollToTop();
-    //End Scroll Top
+        //Start Scroll Top
+            const btn = document.querySelector('.scroll-Top');
+                btn.addEventListener('click', () => {
+                    window.scrollTo({
+                        left: 0,
+                        top: 0,
+                    })
+                })
+                window.addEventListener('scroll', function () {
+                    const scrollHeight = window.pageYOffset;
+                    if (scrollHeight > 100) {
+                        btn.classList.add('show-link');
+                    } else {
+                        btn.classList.remove('show-link');
+                    }
+                });
+        //End Scroll Top
     </script>
 </body>
 

@@ -40,6 +40,23 @@
                 x.style.display = "block";
             }
         }
+        //Scroll Top 
+        const btn = document.querySelector('.scroll-Top');
+            btn.addEventListener('click', () => {
+                window.scrollTo({
+                    left: 0,
+                    top: 0,
+                })
+            })
+            window.addEventListener('scroll', function () {
+                const scrollHeight = window.pageYOffset;
+                if (scrollHeight > 100) {
+                    btn.classList.add('show-link');
+                } else {
+                    btn.classList.remove('show-link');
+                }
+            });
+        //End Scroll Top
     </script>
 </body>
 </html>
