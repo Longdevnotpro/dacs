@@ -269,9 +269,6 @@ button {
     font-weight: bold;
 }
 
-.body-profile .content-1 .infor-user {
-}
-
 .body-profile .content-1 .infor-user .item {
     margin-bottom: 15px;
     width: 100%;
@@ -296,12 +293,12 @@ button {
     padding: 0 10px;
 }
 
-.submit{
+.submit {
     margin: 30px 0;
     text-align: center;
 }
 
-.submit button{
+.submit button {
     background-color: #eb4e52;
     color: #fff;
     height: 36px;
@@ -312,6 +309,30 @@ button {
     border: none;
 }
 
-.body-profile .content-2 {
-    width: 25%;
+.submit button:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.body-profile .content_2 {
+    margin-left: 31px;
+    width: 27.9%;
+    background-color: #fff;
+    box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
+    -webkit-box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
+    -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16);
+}
+
+.body-profile .content_2 a img {
+    padding: 20px 25px;
+    width: 100%;
+}
+
+.body-profile .content_2 .hash-tag {
+    padding: 0 25px;
+}
+
+.body-profile .content_2 .hash-tag a{
+    line-height: 1.5;
+    text-decoration: none;
 }
