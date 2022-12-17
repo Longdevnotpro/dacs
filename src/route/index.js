@@ -24,6 +24,8 @@ function route(app) {
     // NEWPARA ROUTE
 
     app.use('/newpara', newparaRouter)
+
+    
     
     
 

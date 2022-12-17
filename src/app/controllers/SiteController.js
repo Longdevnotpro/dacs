@@ -7,7 +7,7 @@ class SiteController{
 
         Law.find({})
             .then(law  => {
-                res.render('body/default',
+                res.render('body/default-unlog',
                 {
                     layout: 'default-unlog.hbs', 
                     law:multipleMongooseToObject(law) 
@@ -15,6 +15,17 @@ class SiteController{
             })
         
         // res.render('body/default',{layout: 'default-unlog.hbs'})
+    }
+
+    results(req,res){
+        Law.find({"content" : {$regex : req.query.noidung}})
+        .then(law  => {
+            res.render('body/search-unlog',
+            {
+                layout: 'default-unlog.hbs', 
+                law:multipleMongooseToObject(law) 
+            })
+        })
     }
 }
 

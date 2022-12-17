@@ -52,7 +52,7 @@ class HomeController{
         const law = new Law(req.body);
 
         law.save();
-        res.redirect('/home/admin')
+        res.redirect('/home/admin/add')
     }
 
     edit(req,res){
@@ -74,6 +74,17 @@ class HomeController{
     delete(req,res){
         Law.deleteOne({_id: req.params.id},req.body)
             .then(() => res.send('done'))
+    }
+
+    results(req,res){
+        Law.find({"content" : {$regex : req.query.noidung}})
+        .then(law  => {
+            res.render('body/search',
+            {
+                layout: 'home.hbs', 
+                law:multipleMongooseToObject(law) 
+            })
+        })
     }
     
 }
