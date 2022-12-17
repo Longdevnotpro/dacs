@@ -9,15 +9,26 @@
         <a href="#" style="text-decoration: none; color: black">Trang chủ /</a>
     </div>
     <div class="search-content">
-        <div class="input-search-content">
-            <div class="btn-search">
-                <input type="text" placeholder="Nhập nội dung tìm kiếm" />
-                <span>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <span style="font-size: 16px;">Tìm kiếm</span>
-                </span>
+        <form action="" name="form-behave" method="get">
+            <div class="input-search-content">
+                <div class="btn-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung"/>
+                    <span>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <span style="font-size: 16px;" id="search-button" onclick="submit()">Tìm kiếm</span>
+                    </span>
+                </div>
             </div>
-        </div>
+        </form>
+
+        <script>
+            var formbehave = document.forms['form-behave']
+            function submit(){
+                formbehave.submit();
+            }
+        </script>
+
+
         <div class="btn">
             <span><i class="fa-solid fa-filter"></i>Tìm kiếm nâng cao</span>
             <label for="">
@@ -38,33 +49,37 @@
             <div class="hiden-search">
                 <select id="chương" name="Chương">
                     <option value="0">Chọn Chương:</option>
-                    <option value="1">Chương 1</option>
-                    <option value="2">Chương 2</option>
-                    <option value="3">Chương 3</option>
+                    {{#each law }}
+                    <option value="{{this.chuong}}">{{this.chuong}}</option>
+                    {{/each}}
                 </select>
                 <select id="điều" name="Điều">
                     <option value="">Chọn Điều:</option>
-                    <option value="1">Điều 1</option>
-                    <option value="2">Điều 2</option>
-                    <option value="3">Điều 3</option>
+                    {{#each law }}
+                    <option value="{{this.dieu}}">{{this.dieu}}</option>
+                    {{/each}}
                 </select>
                 <select id="khoản" name="Khoản">
                     <option value="0">Chọn Khoản:</option>
-                    <option value="1">Khoản 1</option>
-                    <option value="2">Khoản 2</option>
-                    <option value="3">Khoản 3</option>
+                    {{#each law }}
+                    <option value="{{this.khoan}}">{{this.khoan}}</option>
+                    {{/each}}
                 </select>
                 <select id="mục" name="Mục">
                     <option value="0">Chọn Mục:</option>
-                    <option value="1">Mục 1</option>
-                    <option value="2">Mục 2</option>
-                    <option value="3">Mục 3</option>
+                    {{#each law }}
+                    <option value="{{this.muc}}">{{this.muc}}</option>
+                    {{/each}}
                 </select>
-                <select id="mức phạt" name="Mức Phạt">
-                    <option value="0">Chọn Mức Phạt:</option>
-                    <option value="1">Mức Phạt 1</option>
-                    <option value="2">Mức Phạt 2</option>
-                    <option value="3">Mức Phạt 3</option>
+                <select id="mức phạt" name="Mức Phạt Trên">
+                    <option value="0">Chọn Mức Phạt Trên:</option>
+                    <option value=""></option>
+                </select>
+                <select id="mức phạt" name="Mức Phạt Dưới">
+                    <option value="0">Chọn Mức Phạt Dưới:</option>
+                    {{#each law }}
+                    <option value="{{this.pricebelow}}">{{this.pricebelow}}</option>
+                    {{/each}}
                 </select>
             </div>
         </div>
@@ -101,11 +116,12 @@
                     </div>
                 </div>
             </div>
-    {{/each}}
+            {{/each}}
         </div>
         <div class="content-2">
             <div class="video-clip" style="margin-bottom: 10px">
-                <span style="background-color: e3e3e3; display:block; height:2em; padding: 5px 0;">Trước khi chặt cây, hãy trồng một rừng cây.</span>
+                <span style="background-color: e3e3e3; display:block; height:2em; padding: 5px 0;">Trước khi chặt cây,
+                    hãy trồng một rừng cây.</span>
                 <video width="310" height="230" controls>
                     <source src="/img/video-rung.mp4" type="video/mp4">
                 </video>
@@ -140,29 +156,34 @@
 
             {{!-- Văn bản xem nhiều nhất --}}
             <div class="more">
-                <span style="background-color: e3e3e3; display:block; height:2em; padding: 5px 0;">Văn bản xem nhiều</span>
-                <li href="">Thông báo 5034/TB-LĐTBXH 2022 nghỉ tết Âm lịch và nghỉ lễ Quốc khánh năm 2023 đối với cán bộ, công chức, viên chức và
-                người lao động</li> <br>
+                <span style="background-color: e3e3e3; display:block; height:2em; padding: 5px 0;">Văn bản xem
+                    nhiều</span>
+                <li href="">Thông báo 5034/TB-LĐTBXH 2022 nghỉ tết Âm lịch và nghỉ lễ Quốc khánh năm 2023 đối với cán
+                    bộ, công chức, viên chức và
+                    người lao động</li> <br>
                 <li href="">Hướng dẫn 05-HD/UBKTTW 2022 thực hiện một số điều trong Quy định 69-QĐ/TW</li><br>
                 <li href="">Công văn 8056/VPCP-KGVX 2022 nghỉ Tết Âm lịch và nghỉ lễ Quốc khánh năm 2023</li><br>
                 <li href="">Quyết định 4610/QĐ-UBND Hà Nội 2022 phương án ủy quyền trong giải quyết TTHC</li><br>
-                <li href="">"Công văn 3796/SGDĐT-CTTT TP.HCM 2022 công tác quản lý công trình vệ sinh trong cơ sở giáo dục
-                "</li>
+                <li href="">"Công văn 3796/SGDĐT-CTTT TP.HCM 2022 công tác quản lý công trình vệ sinh trong cơ sở giáo
+                    dục
+                    "</li>
             </div>
         </div>
     </div>
     {{!-- Icon Contact --}}
     <div>
         <div class="icon" style="background-color:red" onclick="contact()">
-            <span class="circle_icon" style="background-image: url(https://core.vchat.vn/upload/brand/2022/04/13/vc-62568080303f5-1649836160.png);"></span>
+            <span class="circle_icon"
+                style="background-image: url(https://core.vchat.vn/upload/brand/2022/04/13/vc-62568080303f5-1649836160.png);"></span>
         </div>
-     </div>
+    </div>
     <div id="hotline-help">
         <div class="tittle-help" style="display: flex; justify-content: center; align-items: center;">
             <span style="color: white;">Chào mừng bạn đến với LuatRung.Vn</span>
         </div>
         <div class="hotline-help1">
-            <span style="font-size:13px">Chào bạn. Vui lòng cho chúng tôi biết thông tin để chúng tôi có thể liên hệ với bạn ngay khi cần nhé.</span>
+            <span style="font-size:13px">Chào bạn. Vui lòng cho chúng tôi biết thông tin để chúng tôi có thể liên hệ với
+                bạn ngay khi cần nhé.</span>
         </div>
         <div class="hotline-help1">
             <span>Họ Tên*</span><br>
@@ -176,7 +197,8 @@
             <span>Email*</span><br>
             <input type="email">
         </div>
-        <button type="submit" style="margin-top: 5px; height:30px; width:120px; background-color: rgb(235, 78, 82); border: none; border-radius: 6px; color:white">Gửi</button>
+        <button type="submit"
+            style="margin-top: 5px; height:30px; width:120px; background-color: rgb(235, 78, 82); border: none; border-radius: 6px; color:white">Gửi</button>
     </div>
     <div class="scroll-Top">
         <button onclick='window.scrollTo({top: 0, behavior: "smooth"});'><i class="fa-solid fa-chevron-up"></i></button>
@@ -184,5 +206,5 @@
 </div>
 
 <script>
-    
+
 </script>
