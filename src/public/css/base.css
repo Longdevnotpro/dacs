@@ -128,6 +128,7 @@
 }
 
 .header-login #userList {
+    z-index: 2;
     display: none;
     position: absolute;
     top: 100%;

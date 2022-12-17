@@ -139,7 +139,6 @@ button {
 .header-profile .cover-image .avatar {
     position: absolute;
     bottom: 0;
-    z-index: 999;
     margin-bottom: -50px;
     margin-left: 15px;
 }
@@ -176,7 +175,6 @@ button {
     float: left;
     padding-left: 190px;
     position: relative;
-    z-index: 9;
 }
 
 .header-profile .cover-image .nickname .tittle-avatar {
@@ -190,7 +188,6 @@ button {
     float: right;
     width: 245px;
     position: relative;
-    z-index: 9;
     height: 200px;
 }
 
@@ -209,6 +206,7 @@ button {
     color: #efccab;
     font-size: 14px;
     text-decoration: none;
+    z-index: 1;
 }
 
 .header-profile .cover-image .replace-image .row1 a i {
@@ -255,7 +253,7 @@ button {
     background-color: #f4f4f4;
     padding: 10px;
     line-height: 22px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 }
 
 .body-profile .content-1 .intro-profile ul {
@@ -265,6 +263,10 @@ button {
 
 .body-profile .content-1 .intro-profile ul li:first-child {
     width: 20%;
+}
+
+.body-profile .content-1 .intro-profile ul li:last-child {
+    font-weight: bold;
 }
 
 .body-profile .content-1 .infor-user {
