@@ -205,18 +205,18 @@
     height: 30px;
 }
 
-#hotline-help .hotline-help1{
+#hotline-help .hotline-help1 {
     text-align: start;
     margin: 0 12px;
     margin-top: 5px;
 }
 
-#hotline-help .hotline-help1 input{
+#hotline-help .hotline-help1 input {
     width: 100%;
     height: 29px;
 }
 
-.scroll-Top{
+.scroll-Top {
     text-align: end;
     margin-right: 20px;
     bottom: 0;
@@ -225,16 +225,17 @@
     z-index: 1;
 }
 
-.scroll-Top button{
+.scroll-Top button {
     height: 45px;
     width: 45px;
     border-radius: 50%;
 }
-.scroll-Top button:hover{
+
+.scroll-Top button:hover {
     cursor: pointer;
     opacity: 0.7;
 }
 
-.scroll-Top i{
+.scroll-Top i {
     font-size: 20px;
 }

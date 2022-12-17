@@ -76,7 +76,7 @@
     //Start Scroll Top
         const scrollToTop = () => {
                 const c = document.documentElement.scrollTop || document.body.scrollTop;
-                if (c > 0) {
+                if (c > 100) {
                     window.requestAnimationFrame(scrollToTop);
                     window.scrollTo(0, c - c / 8);
                 }
@@ -84,7 +84,6 @@
             scrollToTop();
     //End Scroll Top
     </script>
-
 </body>
 
 </html>
