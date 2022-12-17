@@ -4,7 +4,7 @@
 </head>
 
 <div class="container">
-        <div class="profile">
+        {{!-- <div class="profile">
           <h2 style="font-size: 40px; margin-bottom: 15px; font-weight: bold">
             Profile
           </h2>
@@ -23,21 +23,6 @@
                 };
               </script>
             </label>
-            <!-- <div class="btnUpload">
-              <button
-                style="
-                  background-color: var(--btn-color);
-                  color: #333;
-                  width: 60px;
-                  height: 20px;
-                  border-radius: 25px;
-                  border: none;
-                "
-                type="upload"
-              >
-                Upload
-              </button>
-            </div> -->
           </div>
 
           <div class="info">
@@ -62,6 +47,104 @@
           <div class="btn">
             <button style="margin-right: 40px" class="input" type="reset">Cancel</button>
             <button type="submit">Save</button>
+          </div>
+        </div> --}}
+
+        <div class="header-profile">
+          <div class="cover-image">
+            <img src="/img/rung1.jpg" alt="">
+            <div class="avatar">
+              <div class="middle-item">
+                <img src="/img/user.png" alt="">
+                <a href="" onclick=""></a>
+              </div>
+            </div>
+            <div class="nickname">
+              <div class="tittle-avatar">
+                Tuấn Nguyễn
+              </div>
+            </div>
+            <div class="replace-image">
+              <div class="row1">
+                <a href="" onclick="">
+                  <i class="fa-solid fa-camera"></i>Thay đổi ảnh bìa
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="box-tab">
+            <div class="tab1">
+              <div class="tab-item1">
+                <a href="" style="text-decoration: none;"><i class="fa-regular fa-user"></i>Quản lý tài khoản</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="body-profile">
+          <div class="content-1">
+            <div class="intro-profile">
+              <ul>
+                <li>Tài khoản:</li>
+                <li>info@gmail.com</li>
+              </ul>
+              <ul>
+                <li>Gói đăng ký:</li>
+                <li>Tra cứu miễn phí</li>
+              </ul>
+              <ul>
+                <li>Số người sử dụng:</li>
+                <li>1 người sử dụng</li>
+              </ul>
+              <ul>
+                <li>Ngày đăng ký:</li>
+                <li>17/12/2022</li>
+              </ul>
+              <ul>
+                <li>Thời hạn sử dụng:</li>
+                <li>17/12/2023</li>
+              </ul>
+            </div>
+            <div class="infor-user">
+              <div class="item">
+                <span>Họ và tên</span>
+                <input type="text" placeholder="Nhập Tên">
+              </div>
+              <div class="item">
+                <span>Email</span>
+                <input type="email" placeholder="Nhập Email">
+              </div>
+              <div class="item">
+                <span>Số điện thoại</span>
+                <input type="text" placeholder="Nhập số điện thoại">
+              </div>
+              <div class="item">
+                <span>Địa chỉ</span>
+                <input type="text" placeholder="Nhập địa chỉ">
+              </div>
+              <div class="item">
+                <span>Thành Phố</span>
+                <input type="text" placeholder="Nhập vào Thành Phố">
+              </div>
+              <div class="item">
+                <span>Ngày sinh</span>
+                <input type="date">
+              </div>
+              <div class="item1" style="width: 100%; display:flex">
+                <span style="width: 20%;">Giới Tính</span>
+                <input type="radio" value="1" name="1" style="margin-right: 2px;"> Nam
+                <input type="radio" value="1" name="1" style="margin-left: 15px; margin-right: 2px;"> Nữ
+                <input type="radio" value="1" name="1" style="margin-left: 15px; margin-right: 2px;"> Khác
+              </div>
+            </div>
+            <div>
+              <div class="submit">
+                <button>Cập nhật</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="content-2">
+
           </div>
         </div>
       </div>
