@@ -129,10 +129,6 @@ button {
     bottom: 0;
     background-size: cover;
     background-color: #dedede;
-    object-fit: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     border: none;
 }
 
