@@ -6,11 +6,11 @@ const Law = new Schema({
     summarykey: {type: String},
     content: {type: String},
     chuong:{type: String},
-    khoan: {type: String},
-    dieu: {type: String},
-    muc: {type: String},
-    priceabove: {type: String},
-    pricebelow: {type: String},
+    khoan: {type: Number},
+    dieu: {type: Number},
+    muc: {type: Number},
+    priceabove: {type: Number},
+    pricebelow: {type: Number},
     createAt: {type: Date}
   });
 

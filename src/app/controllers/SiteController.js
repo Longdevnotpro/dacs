@@ -1,37 +1,31 @@
 const Law = require('../models/Law')
-const {multipleMongooseToObject} = require('../../util/mogoose')
-class SiteController{
+const { multipleMongooseToObject } = require('../../util/mogoose')
+class SiteController {
 
     // 
     index(req, res) {
 
         Law.find({})
-            .then(law  => {
+            .then(law => {
                 res.render('body/default-unlog',
-                {
-                    layout: 'default-unlog.hbs', 
-                    law:multipleMongooseToObject(law) 
-                })
+                    {
+                        layout: 'default-unlog.hbs',
+                        law: multipleMongooseToObject(law)
+                    })
             })
-        
+
         // res.render('body/default',{layout: 'default-unlog.hbs'})
     }
 
-    results(req,res){
-        Law.find({
-        "content" : {$regex : req.query.noidung}, 
-        "chuong": req.query.chuong, 
-        "muc": req.query.muc, 
-        "dieu": req.query.dieu, 
-        "khoan": req.query.khoan, 
-        })
-        .then(law  => {
-            res.render('body/search-unlog',
-            {
-                layout: 'default-unlog.hbs', 
-                law:multipleMongooseToObject(law) 
+    results(req, res) {
+        Law.find({ "content": { $regex: req.query.noidung }, "chuong":{ $gt: req.query.Chương} })
+            .then(law => {
+                res.render('body/search-unlog',
+                    {
+                        layout: 'default-unlog.hbs',
+                        law: multipleMongooseToObject(law)
+                    })
             })
-        })
     }
 }
 
