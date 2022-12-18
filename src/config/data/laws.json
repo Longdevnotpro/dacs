@@ -2,7 +2,7 @@
   "_id": {
     "$oid": "639abd670f67405303f8abbf"
   },
-  "summarykey": "QUY ĐỊNH CHUNG abc",
+  "summarykey": "QUY ĐỊNH CHUNG",
   "chuong": "1",
   "content": "Nghị định này quy định về hành vi vi phạm ",
   "dieu": "1",
@@ -10,4 +10,212 @@
   "priceabove": "50000",
   "pricebelow": "1000000",
   "khoan": "1"
+},{
+  "_id": {
+    "$oid": "639f018778296939f788bfc6"
+  },
+  "summarykey": "Nghị định 35_Chương 1_Điều 1_Khoản 1",
+  "content": "Nghị định này quy định về hành vi vi phạm, hình thức xử phạt, mức xử phạt, biện pháp khắc phục hậu quả đối với hành vi vi phạm hành chính; thẩm quyền xử phạt và thẩm quyền lập biên bản vi phạm hành chính trong lĩnh vực Lâm nghiệp.",
+  "chuong": "1",
+  "khoan": "1",
+  "dieu": "1",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f026c934e0495c44b3569"
+  },
+  "summarykey": "Nghị định 35_Chương 1_Điều 1_Khoản 2",
+  "content": "\r\nCác hành vi vi phạm hành chính khác trong lĩnh vực Lâm nghiệp không được quy định tại Nghị định này thì áp dụng quy định tại các nghị định của Chính phủ về xử phạt vi phạm hành chính trong lĩnh vực quản lý nhà nước khác có liên quan để xử phạt.",
+  "chuong": "1",
+  "khoan": "2",
+  "dieu": "1",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f035d934e0495c44b356b"
+  },
+  "summarykey": "Nghị định 35_Chương 1_Điều 2_Khoản 1",
+  "content": "Nghị định này áp dụng đối với tổ chức, cá nhân trong nước và tổ chức, cá nhân nước ngoài có hành vi vi phạm hành chính trong lĩnh vực Lâm nghiệp trên lãnh thổ Việt Nam; người có thẩm quyền lập biên bản và thẩm quyền xử phạt vi phạm hành chính theo quy định tại Nghị định này.",
+  "chuong": "1",
+  "khoan": "1",
+  "dieu": "2",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f043e934e0495c44b356d"
+  },
+  "summarykey": "Nghị định 35_Chương 1_Điều 2_Khoản 2",
+  "content": "Tổ chức quy định tại khoản 1 Điều này gồm:\r\na) Cơ quan nhà nước có hành vi vi phạm mà hành vi đó không thuộc nhiệm vụ quản lý nhà nước được giao;\r\nb) Doanh nghiệp được thành lập và hoạt động theo pháp luật Việt Nam; chi nhánh, văn phòng đại diện của doanh nghiệp nước ngoài hoạt động tại Việt Nam;\r\nc) Hợp tác xã, liên hiệp hợp tác xã;\r\nd) Tổ chức, đơn vị sự nghiệp công lập;\r\nđ) Tổ chức nghề nghiệp hoạt động trong lĩnh vực Lâm nghiệp.",
+  "chuong": "1",
+  "khoan": "2",
+  "dieu": "2",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f0520934e0495c44b356f"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 1",
+  "content": "Kiểm lâm viên là công chức thuộc các ngạch kiểm lâm, biên chế trong cơ quan kiểm lâm.",
+  "chuong": "2",
+  "khoan": "1",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f0564934e0495c44b3571"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 2",
+  "content": "Bộ phận cơ thể không thể tách rời sự sống là những bộ phận thực hiện các chức năng chuyên biệt của cơ thể động vật, ngay khi tách rời những bộ phận này khỏi cơ thể sống của động vật thì động vật đó chết (ví dụ: đầu, tim, bộ da, bộ xương, buồng gan...).",
+  "chuong": "2",
+  "khoan": "2",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f05dc934e0495c44b3573"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 3",
+  "content": "Sản phẩm của động vật rừng là các loại sản phẩm có nguồn gốc từ động vật rừng như: thịt, trứng, sữa, tinh dịch, phôi động vật, huyết, dịch mật, nội tạng, da, lông, xương, sừng, ngà, chân, móng...; vật phẩm có thành phần từ các bộ phận của động vật rừng đã qua chế biến như: cao nấu từ xương động vật, túi xách, ví, dây thắt lưng làm từ da động vật rừng.",
+  "chuong": "2",
+  "khoan": "3",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f0604934e0495c44b3575"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 4",
+  "content": "Rừng khoanh nuôi tái sinh thuộc rừng chưa có trữ lượng bao gồm: rừng tái sinh tự nhiên hoặc rừng khoanh nuôi xúc tiến tái sinh tự nhiên có trữ lượng cây đứng dưới 10 m3/ha.",
+  "chuong": "2",
+  "khoan": "4",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f062d934e0495c44b3577"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 5",
+  "content": "Tang vật, phương tiện vi phạm hành chính gồm:\r\na) Lâm sản khai thác, mua bán, vận chuyển, tàng trữ, chế biến trái quy định của pháp luật;\r\nb) Dụng cụ, công cụ, các loại cưa xăng để sử dụng thực hiện hành vi vi phạm hành chính;\r\nc) Phương tiện gồm: các loại xe đạp, xe thô sơ, xe mô tô; các loại xe cơ giới đường bộ, tàu thủy, thuyền, ca-nô, sà lan và các phương tiện khác được sử dụng để thực hiện hành vi vi phạm hành chính.",
+  "chuong": "2",
+  "khoan": "5",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f0658934e0495c44b3579"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 6",
+  "content": "Phương tiện bị người vi phạm hành chính chiếm đoạt trái phép là trường hợp phương tiện của chủ sở hữu hợp pháp bị người có hành vi vi phạm hành chính trộm cắp, cướp, cưỡng đoạt, lạm dụng tín nhiệm để chiếm đoạt, lợi dụng chủ tài sản không có điều kiện ngăn cản để chiếm đoạt hoặc các hành vi trái pháp luật khác tước đoạt quyền chiếm hữu, quản lý, sử dụng.",
+  "chuong": "2",
+  "khoan": "6",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f067f934e0495c44b357b"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 3_Khoản 7",
+  "content": "Phương tiện bị người vi phạm sử dụng trái phép là trường hợp chủ sở hữu hợp pháp, người quản lý hợp pháp hoặc người sử dụng hợp pháp phương tiện cho người khác thuê, mượn hoặc thuê người khác điều khiển phương tiện hoặc giao phương tiện cho người lao động của mình điều khiển để sử dụng vào mục đích hợp pháp, nhưng người được thuê, được mượn phương tiện hoặc người được giao điều khiển phương tiện đó đã tự ý sử dụng phương tiện để vi phạm hành chính.",
+  "chuong": "2",
+  "khoan": "7",
+  "dieu": "3",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f06a8934e0495c44b357d"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 4_Khoản 1",
+  "content": "\r\nĐối với mỗi hành vi vi phạm hành chính trong lĩnh vực Lâm nghiệp, tổ chức, cá nhân phải chịu một trong các hình thức xử phạt chính là cảnh cáo hoặc phạt tiền.",
+  "chuong": "2",
+  "khoan": "1",
+  "dieu": "4",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f088f934e0495c44b357f"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 4_Khoản 2",
+  "content": "Tùy theo tính chất, mức độ vi phạm tổ chức, cá nhân có hành vi vi phạm còn có thể bị áp dụng một hoặc nhiều hình thức xử phạt bổ sung sau đây:\r\na) Tịch thu tang vật, phương tiện được sử dụng để vi phạm hành chính;\r\nb) Đình chỉ hoạt động khai thác rừng có thời hạn từ 06 tháng đến 12 tháng;\r\nc) Đình chỉ hoạt động của cơ sở chế biến lâm sản có thời hạn từ 06 tháng đến 12 tháng.",
+  "chuong": "2",
+  "khoan": "2",
+  "dieu": "4",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f0942934e0495c44b3581"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 4_Khoản 3",
+  "content": "Đối với mỗi hành vi vi phạm hành chính, ngoài việc bị áp dụng hình thức xử phạt, tổ chức, cá nhân vi phạm hành chính có thể bị áp dụng một hoặc nhiều biện pháp khắc phục hậu quả sau:\r\na) Buộc khôi phục lại tình trạng ban đầu;\r\nb) Buộc tháo dỡ công trình, phần công trình xây dựng không có giấy phép hoặc xây dựng không đúng với giấy phép;\r\nc) Buộc thực hiện biện pháp khắc phục tình trạng ô nhiễm môi trường, lây lan dịch bệnh;\r\nd) Buộc tiêu hủy hàng hóa, vật phẩm gây hại cho sức khỏe con người, vật nuôi, cây trồng và môi trường;\r\nđ) Buộc nộp lại số lợi bất hợp pháp có được do thực hiện vi phạm hành chính hoặc buộc nộp lại số tiền bằng trị giá tang vật, phương tiện vi phạm hành chính đã bị tiêu thụ, tẩu tán, tiêu hủy trái quy định của pháp luật;\r\ne) Buộc trồng lại rừng hoặc thanh toán chi phí trồng lại rừng đến khi thành rừng theo suất đầu tư được áp dụng ở địa phương tại thời điểm vi phạm hành chính;\r\ng) Buộc thu hồi chứng chỉ quản lý rừng bền vững đã cấp;\r\nh) Buộc chi trả đầy đủ tiền sử dụng dịch vụ môi trường rừng và tiền lãi phát sinh từ việc chậm chi trả (nếu có) tương ứng với số tiền và thời gian chậm chi trả;\r\ni) Buộc chi trả đầy đủ tiền dịch vụ môi trường rừng cho người nhận khoán bảo vệ rừng theo hợp đồng đã ký kết;\r\nk) Buộc tiêu hủy lô hạt giống, lô cây giống lâm nghiệp;\r\nl) Buộc đưa chất thải, hóa chất độc, chất nổ, chất cháy, chất dễ cháy ra khỏi rừng;\r\nm) Buộc lập dự án kinh doanh du lịch sinh thái, nghỉ dưỡng, giải trí theo quy định của pháp luật hoặc buộc lập dự án kinh doanh du lịch sinh thái, nghỉ dưỡng, giải trí phù hợp với đề án du lịch sinh thái, nghỉ dưỡng, giải trí được cơ quan có thẩm quyền phê duyệt;\r\nn) Buộc xây dựng phương án quản lý rừng bền vững trình cấp có thẩm quyền phê duyệt;\r\no) Buộc trồng lại rừng ngay trong vụ trồng rừng kế tiếp.",
+  "chuong": "2",
+  "khoan": "3",
+  "dieu": "4",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f09f8934e0495c44b3583"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 5_Khoản 1",
+  "content": "Diện tích rừng hoặc diện tích có cây trồng chưa thành rừng tính bằng mét vuông (m2).",
+  "chuong": "2",
+  "khoan": "1",
+  "dieu": "5",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639f0a43934e0495c44b3585"
+  },
+  "summarykey": "Nghị định 35_Chương 2_Điều 5_Khoản 2",
+  "content": "Khối lượng gỗ tính bằng mét khối (m3).",
+  "chuong": "2",
+  "khoan": "2",
+  "dieu": "5",
+  "muc": "",
+  "priceabove": "",
+  "pricebelow": "",
+  "__v": 0
 }]
