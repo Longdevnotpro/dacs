@@ -36,7 +36,7 @@
 .input-search-content input {
     background-color: f7f7f7;
     height: 40px;
-    width: 84%;
+    width: 82%;
     padding-left: 10px;
 }
 
@@ -80,11 +80,11 @@
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: 25px 20px;
+    padding: 25px 0px;
 }
 
 .content-1 {
-    width: 65%;
+    width: 70%;
 }
 
 
@@ -95,11 +95,9 @@
 }
 
 .content-2 {
-    margin-right: 15px;
-    /* background-color: var(--content-color); */
-    height: 681px;
+    margin-left: 3%;
     height: 100%;
-    width: 25%;
+    width: 27%;
     border-radius: 2px;
     text-align: center;
     font-weight: 700;
@@ -144,7 +142,7 @@
 }
 
 .content-2 .more li {
-    margin: 15px 0;
+    margin: 6px 0;
     text-align: start;
     padding: 0 0 15px 10px;
     border-bottom: solid 1px #e6e6e6;
@@ -164,7 +162,7 @@
     bottom: 0;
     right: 0;
     z-index: 2;
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .icon:hover {
@@ -217,28 +215,33 @@
 }
 
 .scroll-Top {
-    margin-right: 15px;
-    bottom: 85px;
+    margin-right: 10px;
+    bottom: 155px;
     right: 0;
     position: fixed;
     z-index: -1;
     visibility: hidden;
 }
 
-.show-link{
+.show-link {
     visibility: visible;
     z-index: 1;
 }
 
 .scroll-Top button {
-    height: 60px;
-    width: 60px;
+    height: 38px;
+    width: 38px;
     border-radius: 50%;
+    border: none;
+    background-color: #bdbdbd;
+    color: white;
 }
 
 .scroll-Top button:hover {
     cursor: pointer;
     opacity: 0.7;
+    background-color: #a67942;
+    color: #fff;
 }
 
 .scroll-Top i {

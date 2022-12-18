@@ -213,6 +213,8 @@ input:checked+.slider:before {
 
 /*  container */
 .container {
+    width: 88%;
+    margin: 0 auto;
     padding-top: 100px;
 }
 
