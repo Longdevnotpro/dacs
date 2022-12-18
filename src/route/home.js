@@ -10,12 +10,10 @@ router.get('/admin/delete/:id', homeController.delete);
 
 router.put('/admin/edit/:id', homeController.update)
 
-router.post('/admin/store',homeController.store)
-
 router.get('/admin/:id/edit',homeController.edit)
 
+router.post('/admin/store',homeController.store)
 router.get('/admin/add',homeController.add)
-
 
 router.get('/profile',homeController.setting_profile)
 
