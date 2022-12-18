@@ -8,89 +8,89 @@
         <i class="fa-solid fa-house"></i>
         <a href="#" style="text-decoration: none; color: black">Trang chủ /</a>
     </div>
-    <div class="search-content">
-        <form action="/home/noidung" name="form-behave" method="get">
+    <form action="/home/noidung" name="form-behave" method="get">
+        <div class="search-content">
             <div class="input-search-content">
                 <div class="btn-search">
-                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung"/>
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung" />
                     <span>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span style="font-size: 16px;" id="search-button" onclick="submit()">Tìm kiếm</span>
                     </span>
                 </div>
             </div>
-        </form>
-
-        <script>
-            var formbehave = document.forms['form-behave']
-            function submit(){
-                formbehave.submit();
-            }
-        </script>
 
 
-        <div class="btn">
-            <span><i class="fa-solid fa-filter"></i>Tìm kiếm nâng cao</span>
-            <label for="">
-                <input type="radio" value="1" name="select"> Tất cả
-            </label>
-            <label for="">
-                <input type="radio" value="1" name="select"> Tiêu đề
-            </label>
-            <label for="">
-                <input type="radio" value="1" name="select"> Số hiệu văn bản
-            </label>
-            <div style="cursor: pointer;" onclick="clickShow()">
-                <span>Thu gọn</span>
-                <i class="fa-solid fa-caret-up"></i>
+
+            <div class="btn">
+                <span><i class="fa-solid fa-filter"></i>Tìm kiếm nâng cao</span>
+                <label for="">
+                    <input type="radio" value="1" name="select"> Tất cả
+                </label>
+                <label for="">
+                    <input type="radio" value="1" name="select"> Tiêu đề
+                </label>
+                <label for="">
+                    <input type="radio" value="1" name="select"> Số hiệu văn bản
+                </label>
+                <div style="cursor: pointer;" onclick="clickShow()">
+                    <span>Thu gọn</span>
+                    <i class="fa-solid fa-caret-up"></i>
+                </div>
+            </div>
+            <div id="hiden-search-none" class="hiden-search-none">
+                <div class="hiden-search">
+                    <select id="chương" name="Chương">
+                        <option value="0">Chọn Chương:</option>
+                        {{#each law }}
+                        <option value="{{this.chuong}}" name="chuong">{{this.chuong}}</option>
+                        {{/each}}
+                    </select>
+                    <select id="điều" name="Điều">
+                        <option value="">Chọn Điều:</option>
+                        {{#each law }}
+                        <option value="{{this.dieu}}" name="dieu">{{this.dieu}}</option>
+                        {{/each}}
+                    </select>
+                    <select id="khoản" name="khoan">
+                        <option value="0">Chọn Khoản:</option>
+                        {{#each law }}
+                        <option value="{{this.khoan}}" name="khoan">{{this.khoan}}</option>
+                        {{/each}}
+                    </select>
+                    <select id="mục" name="Mục">
+                        <option value="0">Chọn Mục:</option>
+                        {{#each law }}
+                        <option value="{{this.muc}}" name="muc">{{this.muc}}</option>
+                        {{/each}}
+                    </select>
+                    <select id="mức phạt" name="Mức Phạt Trên">
+                        <option value="0">Chọn Mức Phạt Trên:</option>
+                        <option value=""></option>
+                    </select>
+                    <select id="mức phạt" name="Mức Phạt Dưới">
+                        <option value="0">Chọn Mức Phạt Dưới:</option>
+                        {{#each law }}
+                        <option value="{{this.pricebelow}}">{{this.pricebelow}}</option>
+                        {{/each}}
+                    </select>
+                </div>
             </div>
         </div>
-        <div id="hiden-search-none" class="hiden-search-none">
-            <div class="hiden-search">
-                <select id="chương" name="Chương">
-                    <option value="0">Chọn Chương:</option>
-                    {{#each law }}
-                    <option value="{{this.chuong}}">{{this.chuong}}</option>
-                    {{/each}}
-                </select>
-                <select id="điều" name="Điều">
-                    <option value="">Chọn Điều:</option>
-                    {{#each law }}
-                    <option value="{{this.dieu}}">{{this.dieu}}</option>
-                    {{/each}}
-                </select>
-                <select id="khoản" name="Khoản">
-                    <option value="0">Chọn Khoản:</option>
-                    {{#each law }}
-                    <option value="{{this.khoan}}">{{this.khoan}}</option>
-                    {{/each}}
-                </select>
-                <select id="mục" name="Mục">
-                    <option value="0">Chọn Mục:</option>
-                    {{#each law }}
-                    <option value="{{this.muc}}">{{this.muc}}</option>
-                    {{/each}}
-                </select>
-                <select id="mức phạt" name="Mức Phạt Trên">
-                    <option value="0">Chọn Mức Phạt Trên:</option>
-                    <option value=""></option>
-                </select>
-                <select id="mức phạt" name="Mức Phạt Dưới">
-                    <option value="0">Chọn Mức Phạt Dưới:</option>
-                    {{#each law }}
-                    <option value="{{this.pricebelow}}">{{this.pricebelow}}</option>
-                    {{/each}}
-                </select>
-            </div>
-        </div>
-    </div>
+    </form>
+    <script>
+        var formbehave = document.forms['form-behave']
+        function submit() {
+            formbehave.submit();
+        }
+    </script>
     <div class="container-content">
         <div class="content-1" id="content-1">
             {{#each law }}
             <div class="container-showpara" id="container-showpara">
                 <div class="container-showpara-content">
-                    <span style="font-weight: 500;">
-                        {{this.summarykey}}
+                    {{!-- <span style="font-weight: 500;">
+                        NGHỊ ĐỊNH_{{this.dieu}}_{{this.khoan}}
                     </span>
                     <div>
                         <h4 style="font-weight: 300">Ngày tạo: {{this.createAt}}</h4>
@@ -98,7 +98,20 @@
                         <h4 style="font-weight: 300">Hiệu lực:</h4>
                         <h4 style="font-weight: 300">Áp dụng:</h4>
 
+                    </div> --}}
+
+                    <span style="font-weight: 500;">
+                        {{this.content}}
+                    </span>
+                    <div>
+                        <h4 style="font-weight: 300">Chương: {{this.chuong}}</h4>
+                        <h4 style="font-weight: 300">Mục:{{this.muc}}</h4>
+                        <h4 style="font-weight: 300">Điều:{{this.dieu}}</h4>
+                        <h4 style="font-weight: 300">Khoản:{{this.khoan}}</h4>
+                        <h4 style="font-weight: 300">Mức phạt trên:{{this.priceabow}}</h4>
+                        <h4 style="font-weight: 300">Mức phạt dưới:{{this.pricebelow}}</h4>
                     </div>
+
                 </div>
 
                 <div class="container-showpara-function">

@@ -18,7 +18,13 @@ class SiteController{
     }
 
     results(req,res){
-        Law.find({"content" : {$regex : req.query.noidung}})
+        Law.find({
+        "content" : {$regex : req.query.noidung}, 
+        "chuong": req.query.chuong, 
+        "muc": req.query.muc, 
+        "dieu": req.query.dieu, 
+        "khoan": req.query.khoan, 
+        })
         .then(law  => {
             res.render('body/search-unlog',
             {
