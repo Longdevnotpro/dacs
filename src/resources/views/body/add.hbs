@@ -13,7 +13,7 @@
 
     <form class="add" method="POST" action="/home/admin/store">
 
-        <h1 style="margin-bottom: 20px">Thêm điều khoản</h1>
+        <h1 style="display: flex; justify-content: center; padding: 20px">Thêm điều khoản</h1>
         
         <div class="form-group">
             <label for="summarykey">Từ khóa:</label>
@@ -54,11 +54,11 @@
             <label for="pricebelow">Mức phạt dưới:</label>
             <input type="text" class="form-control" id="pricebelow" name="pricebelow"  placeholder="Nhập vào Mức Phạt dưới...">
         </div>
-
-        <a style="text-decoration: none;" href="/home/admin">
-            <input style="background-color: rgb(191, 180, 180); cursor: pointer; margin-bottom: 25px; width: 150px" type="button" value="Thoát"/>
-        </a>
-        
-        <input style="background-color: rgb(191, 180, 180); cursor: pointer; width: 150px; margin-left: 20px;" type="submit" value="Thêm Văn bản"/>     
+        <div class="btnFuntion">
+            <a style="text-decoration: none;" href="/home/admin">
+                <input class="btn" type="button" value="Thoát"/>
+            </a>
+            <input class="btn" type="submit" value="Thêm Văn bản"/>     
+        </div>
     </form>
 </div>

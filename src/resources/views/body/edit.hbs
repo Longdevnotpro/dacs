@@ -12,7 +12,7 @@
     </div>
 
     <form class="add" method="POST" action="/home/admin/edit/{{law._id}}?_method=PUT">
-        <h1 style="margin-bottom: 20px">Chỉnh sửa điều khoản</h1>
+        <h1 style="display: flex; justify-content: center; padding: 20px">Chỉnh sửa điều khoản</h1>
         <div class="form-group">
             <label for="summarykey">Từ khóa:</label>
             <textarea type="text" class="form-control" id="summarykey" name="summarykey">{{law.summarykey}}</textarea>
@@ -52,12 +52,13 @@
             <label for="pricebelow">Mức phạt dưới:</label>
             <input type="text" class="form-control" id="pricebelow" name="pricebelow" value="{{law.pricebelow}}">
         </div>
-        
-        <a style="text-decoration: none;" href="/home/admin">
-            <input style="background-color: rgb(191, 180, 180); cursor: pointer; margin-bottom: 25px; width: 150px" type="button" value="Thoát" />
-        </a>
-        
-        <input style="background-color: rgb(191, 180, 180); cursor: pointer; width: 150px; margin-left: 20px;" type="submit" value="Cập nhật" />
+        <div class="btnFuntion">
+            <a style="text-decoration: none;" href="/home/admin">
+                <input class="btn" type="button" value="Thoát" />
+            </a>
+            
+            <input class="btn" type="submit" value="Cập nhật" />
+        </div>
     </form>
 </div>
 
