@@ -72,8 +72,8 @@ class HomeController{
     }
 
     delete(req,res){
-        Law.deleteOne({_id: req.params.id},req.body)
-            .then(() => res.send('done'))
+        Law.deleteOne({_id: req.params.id}, req.body)
+            .then(() => res.redirect('/home/admin'))
     }
 
     results(req,res){
