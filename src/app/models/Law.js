@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
+var aggregatePaginate = require('mongoose-aggregate-paginate-v2');
+
 const Law = new Schema({
     summarykey: {type: String},
     content: {type: String},
@@ -14,4 +16,6 @@ const Law = new Schema({
     createAt: {type: Date}
   });
 
-module.exports = mongoose.model('law', Law)
+Law.plugin(aggregatePaginate); //second step
+
+module.exports = mongoose.model('law', Law);

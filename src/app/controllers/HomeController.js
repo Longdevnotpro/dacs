@@ -38,6 +38,28 @@ class HomeController {
 			});
 		});
 	}
+	// newpara(req, res) {
+	// 	const aggregateQuery = Law.aggregate();
+
+ 	// 	Law.aggregatePaginate(aggregateQuery, {
+	// 		page: 1,
+	// 		limit: 5,
+	// 	})
+	// 		.then(function (results) {
+	// 			// res.json(results)
+	// 			console.log(results);
+	// 			res.render('body/newpara', {
+	// 			layout: 'home.hbs',
+	// 			results: multipleMongooseToObject(results),
+	// 		});
+
+				
+	// 		})
+	// 		.catch(function (err) {
+	// 			console.log(err);
+	// 		});
+	// };
+
 
 	admin(req, res) {
 		Law.find({}).then((law) => {
