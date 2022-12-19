@@ -371,6 +371,7 @@ footer h3 {
     margin-bottom: 15px;
     border-bottom: 3px solid antiquewhite;
     font-size: 1.05rem;
+    opacity: 0.9;
 }
 
 footer h4 {
