@@ -7,6 +7,9 @@
     width: 70%;
     height: 130px;
     border-radius: 1px;
+    background-color: #fff;
+    color: black;
+    opacity: 0.9;
 }
 
 .input-search-content input:focus {
@@ -27,26 +30,28 @@
 }
 
 .input-search-content .btn-search {
-    background-color: var(--btn-color);
     font-size: 16px;
     height: 40px;
     width: 70%;
 }
 
 .input-search-content input {
-    background-color: f7f7f7;
+    background-color: #f7f7f7;
     height: 40px;
     width: 82%;
     padding-left: 10px;
 }
 
 .input-search-content .btn-search span {
-    background-color: rgb(161, 103, 103);
-    color: white;
-    cursor: pointer;
+    background-color: var(--btn-search-color);
+    color: #fff;
     padding: 0 5.58px;
 }
 
+.input-search-content .btn-search span:hover {
+    cursor: pointer;
+    opacity: 0.9;
+}
 
 .btn {
     text-align: center;
@@ -57,6 +62,10 @@
 
 .btn label {
     margin: 0 25px;
+}
+
+.btn div:hover {
+    color: var(--btn-search-color);
 }
 
 /* start hiden-search */
@@ -101,6 +110,9 @@
     border-radius: 2px;
     text-align: center;
     font-weight: 700;
+    background-color: #fff;
+    color: black;
+    opacity: 0.9;
 }
 
 .content-2 .video-clip {
@@ -214,6 +226,21 @@
     height: 29px;
 }
 
+#hotline-help button {
+    margin-top: 5px;
+    height: 30px;
+    width: 120px;
+    background-color: rgb(235, 78, 82);
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+#hotline-help button:hover {
+    opacity: 0.9;
+}
+
 .scroll-Top {
     margin-right: 10px;
     bottom: 155px;
@@ -239,8 +266,7 @@
 
 .scroll-Top button:hover {
     cursor: pointer;
-    opacity: 0.7;
-    background-color: #a67942;
+    opacity: 0.8;
     color: #fff;
 }
 

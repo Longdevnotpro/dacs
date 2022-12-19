@@ -22,6 +22,9 @@
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
     -webkit-box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
     -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+        color: black;
+        opacity: 0.9;
 }
 
 .header-profile .cover-image {
@@ -146,16 +149,19 @@
 .body-profile {
     display: flex;
     width: 100%;
-    margin: 25px 0;
+    margin: 25px 0 0 0;
+    padding-bottom: 25px;
 }
 
 .body-profile .content-1 {
     width: 70%;
     padding: 20px 25px;
-    background-color: #fff;
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
     -webkit-box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
     -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+        color: black;
+        opacity: 0.9;
 }
 
 .body-profile .content-1 .intro-profile {
@@ -226,10 +232,12 @@
 .body-profile .content_2 {
     margin-left: 31px;
     width: 27.9%;
-    background-color: #fff;
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
     -webkit-box-shadow: 0 1px 8px 0 rgb(0 0 0 / 16%);
     -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.16);
+    background-color: #fff;
+        color: black;
+        opacity: 0.9;
 }
 
 .body-profile .content_2 a img {
