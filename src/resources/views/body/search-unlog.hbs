@@ -12,7 +12,7 @@
         <div class="search-content">
             <div class="input-search-content">
                 <div class="btn-search">
-                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung" />
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung"/>
                     <span>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span style="font-size: 16px;" id="search-button" onclick="submit()">Tìm kiếm</span>
@@ -115,14 +115,15 @@
             <div class="container-showpara" id="container-showpara">
                 <div class="container-showpara-content">
                     <span style="font-weight: 500;">
-                        NGHỊ ĐỊNH_{{this.dieu}}_{{this.khoan}}
+                        {{this.content}}
                     </span>
                     <div>
-                        <h4 style="font-weight: 300">Ngày tạo: {{this.createAt}}</h4>
-                        <h4 style="font-weight: 300">Ngày cập nhật:</h4>
-                        <h4 style="font-weight: 300">Hiệu lực:</h4>
-                        <h4 style="font-weight: 300">Áp dụng:</h4>
-
+                        <h4 style="font-weight: 300">Chương: {{this.chuong}}</h4>
+                        <h4 style="font-weight: 300">Mục:{{this.muc}}</h4>
+                        <h4 style="font-weight: 300">Điều:{{this.dieu}}</h4>
+                        <h4 style="font-weight: 300">Khoản:{{this.khoan}}</h4>
+                        <h4 style="font-weight: 300">Mức phạt trên:{{this.priceabow}}</h4>
+                        <h4 style="font-weight: 300">Mức phạt dưới:{{this.pricebelow}}</h4>
                     </div>
                 </div>
 

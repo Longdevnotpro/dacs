@@ -18,10 +18,9 @@ class SiteController {
     }
 
     results(req, res) {
-        Law.find({ $or: [
-            { content: {$regex: req.body.noidung} },
-            { $or: [{c: 1}, {d: 1}] }
-        ] })
+        Law.find({
+            content: {$regex: req.query.noidung}
+        })
             .then(law => {
                 res.render('body/search-unlog',
                     {
