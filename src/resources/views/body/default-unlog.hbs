@@ -12,7 +12,7 @@
         <div class="search-content">
             <div class="input-search-content">
                 <div class="btn-search">
-                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung" />
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm" name="noidung" value=""/>
                     <span>
                         <i class="fa-solid fa-magnifying-glass"></i>
                         <span style="font-size: 16px;" id="search-button" onclick="submit()">Tìm kiếm</span>
@@ -40,39 +40,64 @@
             </div>
             <div id="hiden-search-none" class="hiden-search-none">
                 <div class="hiden-search">
-                    <select id="chương" name="Chương">
-                        <option value="0">Chọn Chương:</option>
-                        {{#each law }}
-                        <option value="{{this.chuong}}" name="chuong">{{this.chuong}}</option>
-                        {{/each}}
+                    <select id="chương" name="chuong">
+                        <option value="">Chọn Chương:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
-                    <select id="điều" name="Điều">
+                    <select id="điều" name="dieu">
                         <option value="">Chọn Điều:</option>
-                        {{#each law }}
-                        <option value="{{this.dieu}}" name="dieu">{{this.dieu}}</option>
-                        {{/each}}
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
+
                     <select id="khoản" name="khoan">
-                        <option value="0">Chọn Khoản:</option>
-                        {{#each law }}
-                        <option value="{{this.khoan}}" name="khoan">{{this.khoan}}</option>
-                        {{/each}}
+                        <option value="">Chọn Khoản:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
-                    <select id="mục" name="Mục">
-                        <option value="0">Chọn Mục:</option>
-                        {{#each law }}
-                        <option value="{{this.muc}}" name="muc">{{this.muc}}</option>
-                        {{/each}}
+                    <select id="mục" name="muc">
+                        <option value="">Chọn Mục</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
                     <select id="mức phạt" name="Mức Phạt Trên">
-                        <option value="0">Chọn Mức Phạt Trên:</option>
-                        <option value=""></option>
+                        <option value="">Chọn Chương:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
                     <select id="mức phạt" name="Mức Phạt Dưới">
-                        <option value="0">Chọn Mức Phạt Dưới:</option>
-                        {{#each law }}
-                        <option value="{{this.pricebelow}}">{{this.pricebelow}}</option>
-                        {{/each}}
+                        <option value="">Chọn Chương:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
                 </div>
             </div>
@@ -90,7 +115,7 @@
             <div class="container-showpara" id="container-showpara">
                 <div class="container-showpara-content">
                     <span style="font-weight: 500;">
-                        NGHỊ ĐỊNH_{{this.dieu}}_{{this.khoan}}
+                        NGHỊ ĐỊNH_{{this.chuong}}_{{this.muc}}_{{this.dieu}}_{{this.khoan}}
                     </span>
                     <div>
                         <h4 style="font-weight: 300">Ngày tạo: {{this.createAt}}</h4>

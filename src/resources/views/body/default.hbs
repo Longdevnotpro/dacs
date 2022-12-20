@@ -40,42 +40,64 @@
             </div>
             <div id="hiden-search-none" class="hiden-search-none">
                 <div class="hiden-search">
-                    <select id="chương" name="Chương">
-                        <option value="0">Chọn Chương:</option>
-                        <option value="1" name="chuong">1</option>
-                        <option value="2" name="chuong">2</option>
-                        <option value="3" name="chuong">3</option>
-                        <option value="4" name="chuong">4</option>
-
-                        
+                    <select id="chương" name="chuong">
+                        <option value="">Chọn Chương:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
-                    <select id="điều" name="Điều">
+                    <select id="điều" name="dieu">
                         <option value="">Chọn Điều:</option>
-                      
-                        <option value="" name="dieu"></option>
-                        
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
                     </select>
+
                     <select id="khoản" name="khoan">
-                        <option value="0">Chọn Khoản:</option>
-                      
-                        <option value="" name="khoan"></option>
-                        
+                        <option value="">Chọn Khoản:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
-                    <select id="mục" name="Mục">
-                        <option value="0">Chọn Mục:</option>
-                      
-                        <option value="" name="muc"></option>
-                        
+                    <select id="mục" name="muc">
+                        <option value="">Chọn Mục</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
                     <select id="mức phạt" name="Mức Phạt Trên">
-                        <option value="0">Chọn Mức Phạt Trên:</option>
-                        <option value=""></option>
+                        <option value="">Chọn Chương:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
                     <select id="mức phạt" name="Mức Phạt Dưới">
-                        <option value="0">Chọn Mức Phạt Dưới:</option>
-                      
-                        <option value=""></option>
-                        
+                        <option value="">Chọn Chương:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+
                     </select>
                 </div>
             </div>
@@ -93,7 +115,7 @@
             <div class="container-showpara" id="container-showpara">
                 <div class="container-showpara-content">
                     <span style="font-weight: 500;">
-                        NGHỊ ĐỊNH_{{this.dieu}}_{{this.khoan}}
+                        NGHỊ ĐỊNH_{{this.chuong}}_{{this.muc}}_{{this.dieu}}_{{this.khoan}}
                     </span>
                     <div>
                         <h4 style="font-weight: 300">Ngày tạo: {{this.createAt}}</h4>
