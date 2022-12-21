@@ -18,7 +18,18 @@ class SiteController {
     }
 
     results(req, res) {
-        Law.find({ content: {$regex: req.query.noidung}, age: { $gte: 18 } })
+        Law.find({
+            $or: [
+                { content: {$regex: req.query.noidung}, chuong: { $eq: req.query.chuong } },
+                { chuong: {$eq: req.query.chuong}},
+                { muc: {$eq: req.query.muc}},
+                { dieu: {$eq: req.query.dieu}},
+                { khoan: {$eq: req.query.khoan}},
+                // { content: {$regex: req.query.noidung}},
+
+
+             ]
+    })
             .then(law => {
                 res.render('body/search-unlog',
                     {
