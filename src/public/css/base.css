@@ -9,12 +9,15 @@
 :root {
     --header-color: #2F5D62;
     --slider-background: #28096b;
-    --btn-search-color: rgb(161, 103, 103);
+    --btn-search-color: rgb(235, 78, 82);
+    --text-btn-search-color: white;
 }
 
 :root {
-    --box-background: #fff;
-    --box-color: black;
+    --tittle-box: #e3e3e3;
+    --text-color-header: white;
+    --box-background: white;
+    --text-color: black;
 }
 
 .wrap {
@@ -22,6 +25,7 @@
     /* height: 3000px; */
     max-width: 100%;
     /* max-height: 100%; */
+    background-color: #fff;
 }
 
 /*  Header  */
@@ -40,7 +44,7 @@
 }
 
 .header a {
-    color: #fff;
+    color: var(--text-color-header);
     text-decoration: none;
     line-height: 70px;
 }
@@ -215,19 +219,23 @@ input:checked+.slider:before {
 
 /*  container */
 .container {
-    width: 88%;
+    padding: 100px 100px 0 100px;
     margin: 0 auto;
-    padding-top: 100px;
     height: fit-content;
 }
 
 .road {
     display: inline-block;
     margin: 15px 0 15px 15px;
-    background-color: #fff;
-    color: black;
+    background-color: var(--box-background);
     opacity: 0.9;
     border-radius: 2px;
+    color: var(--text-color);
+}
+
+.road a{
+    text-decoration: none;
+    color: var(--text-color);
 }
 
 .container-showpara {
@@ -243,8 +251,8 @@ input:checked+.slider:before {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #fff;
-    color: black;
+    background-color: var(--box-background);
+    color: var(--text-color);
     opacity: 0.9;
 }
 
@@ -362,7 +370,7 @@ footer {
     width: 100%;
     padding: 25px 0;
     background-color: var(--header-color);
-    color: #fff;
+    color: var(--text-color-header);
     bottom: 0;
     opacity: 0.99;
 }
@@ -390,7 +398,7 @@ footer h4 {
 
 .link_header h4 a {
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color-header);
 }
 
 .link_header h4 a:hover {
@@ -403,7 +411,7 @@ footer h4 {
 
 .connection a {
     margin-right: 12px;
-    color: #fff;
+    color: var(--text-color-header);
 }
 
 .connection a:hover {
