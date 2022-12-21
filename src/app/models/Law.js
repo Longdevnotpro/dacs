@@ -5,16 +5,15 @@ const Schema = mongoose.Schema;
 var aggregatePaginate = require('mongoose-aggregate-paginate-v2');
 
 const Law = new Schema({
-    summarykey: {type: String},
     content: {type: String},
-    chuong:{type: String, default:0},
-    khoan: {type: Number, default:0},
-    dieu: {type: Number, default:0},
-    muc: {type: Number, default:0},
-    priceabove: {type: Number, default:0},
-    pricebelow: {type: Number, default:0},
-    createAt: {type: Date}
-  });
+    chuong:{type: String},
+    khoan: {type: Number},
+    dieu: {type: Number},
+    muc: {type: Number},
+    priceabove: {type: Number},
+    pricebelow: {type: Number},
+    
+  },{ timestamps: true });
 
 Law.plugin(aggregatePaginate); //second step
 

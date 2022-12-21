@@ -3,7 +3,7 @@ const {multipleMongooseToObject} = require('../../util/mogoose');
 
 
 class LoginController{
-
+    
     // LOGIN function
     dangnhap(req, res,next) {
         res.render('body/login',{layout: 'log.hbs'})
@@ -12,6 +12,7 @@ class LoginController{
     check(req,res){
         User.find({})
             .then(user => {
+                
                 const emailuser = user.map(function (params) {
                     return params.email
                 })
@@ -23,16 +24,16 @@ class LoginController{
                 const password = req.query.password;
 
                 if(emailuser.includes(email) && passworduser.includes(password) ){
-                    res.redirect('/home')
+                        setTimeout(function () {
+                            res.redirect('/home')
+                        },3000)  
                 }
                 else{ 
-                    res.status(400).send('dang nhap sai me m roi')
+                    
                 }
     
             })
-            
-        
-        
+
     }
 
 }

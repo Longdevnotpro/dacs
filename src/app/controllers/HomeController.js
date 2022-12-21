@@ -1,6 +1,6 @@
 const Law = require('../models/Law')
-const {multipleMongooseToObject} = require('../../util/mogoose')
-const {mongooseToObject} = require('../../util/mogoose');
+const { multipleMongooseToObject } = require('../../util/mogoose')
+const { mongooseToObject } = require('../../util/mogoose');
 const User = require('../models/User');
 
 class HomeController {
@@ -22,8 +22,8 @@ class HomeController {
 	}
 
 	// edit_profile(req, res) {
-    //     User.findById(req.params.id).then((User) => {
-    //         res.render('body/profile', {
+	//     User.findById(req.params.id).then((User) => {
+	//         res.render('body/profile', {
 	// 					layout: 'home.hbs',
 	// 					user: mongooseToObject(User),
 	// 				});
@@ -41,7 +41,7 @@ class HomeController {
 	// newpara(req, res) {
 	// 	const aggregateQuery = Law.aggregate();
 
- 	// 	Law.aggregatePaginate(aggregateQuery, {
+	// 	Law.aggregatePaginate(aggregateQuery, {
 	// 		page: 1,
 	// 		limit: 5,
 	// 	})
@@ -53,7 +53,7 @@ class HomeController {
 	// 			results: multipleMongooseToObject(results),
 	// 		});
 
-				
+
 	// 		})
 	// 		.catch(function (err) {
 	// 			console.log(err);
@@ -79,26 +79,33 @@ class HomeController {
 	store(req, res) {
 		const law = new Law(req.body);
 
-		law.save();
-		res.redirect('/home/admin/add');
+		setTimeout(() => {
+			law.save();
+			res.redirect('/home/admin/add');
+		}, 1500);
 	}
 
 	//Sửa
 	// [GET] /admin/:id/edit
 	edit(req, res) {
-		Law.findById(req.params.id).then((law) => {
-			res.render('body/edit', {
-				layout: 'home.hbs',
-				law: mongooseToObject(law),
+		Law.findById(req.params.id)
+			.then((law) => {
+				res.render('body/edit', {
+					layout: 'home.hbs',
+					law: mongooseToObject(law),
+				});
 			});
-		});
 	}
 
 	// [PUT] /admin/edit/:id
 	update(req, res) {
-		Law.updateOne({ _id: req.params.id }, req.body).then(() =>
-			res.redirect('/home/admin')
-		);
+		Law.updateOne({ _id: req.params.id }, req.body)
+			.then(() =>{
+				setTimeout(() => {
+					res.redirect('/home/admin')	
+				}, 1500);
+			})
+			
 	}
 
 	//Xóa
