@@ -18,7 +18,7 @@ router.get('/admin/add',homeController.add)
 router.get('/profile',homeController.setting_profile)
 
 router.get('/admin', homeController.admin)
-router.get('/newpara',homeController.newpara)
+router.get('/newpara/:page', homeController.newpara);
 router.get('/noidung',homeController.results)
 router.get('/',homeController.show)
 

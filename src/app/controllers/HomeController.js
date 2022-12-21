@@ -30,36 +30,40 @@ class HomeController {
 	// 			});
 	// }
 
-	newpara(req, res) {
-		Law.find({}).then((law) => {
-			res.render('body/newpara', {
-				layout: 'home.hbs',
-				law: multipleMongooseToObject(law),
-			});
-		});
-	}
 	// newpara(req, res) {
-	// 	const aggregateQuery = Law.aggregate();
-
-	// 	Law.aggregatePaginate(aggregateQuery, {
-	// 		page: 1,
-	// 		limit: 5,
-	// 	})
-	// 		.then(function (results) {
-	// 			// res.json(results)
-	// 			console.log(results);
-	// 			res.render('body/newpara', {
+	// 	Law.find({}).then((law) => {
+	// 		res.render('body/newpara', {
 	// 			layout: 'home.hbs',
-	// 			results: multipleMongooseToObject(results),
+	// 			law: multipleMongooseToObject(law),
 	// 		});
+	// 	});
+	// }
 
+	// Pagination
+	// router.get("/search/:page", 
+	newpara(req, res, next){
+		const resultsPerPage = 5;
+		let page = req.params.page >= 1 ? req.params.page : 1;
+		const query = req.query.search;
 
-	// 		})
-	// 		.catch(function (err) {
-	// 			console.log(err);
-	// 		});
-	// };
+		page = page - 1
 
+		Law.find({})
+		
+			.sort({ createdAt: 'desc' })
+			.limit(resultsPerPage)
+			.skip(resultsPerPage * page)
+			.then((law) => {
+				// return res.status(200).send(law);
+				res.render('body/newpara', {
+					layout: 'home.hbs',
+					law: multipleMongooseToObject(law),
+				});
+			})
+			.catch((err) => {
+				return res.status(500).send(err);
+			});
+	};
 
 	admin(req, res) {
 		Law.find({}).then((law) => {
