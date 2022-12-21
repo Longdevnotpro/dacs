@@ -30,27 +30,19 @@ class HomeController {
 	// 			});
 	// }
 
-	// newpara(req, res) {
-	// 	Law.find({}).then((law) => {
-	// 		res.render('body/newpara', {
-	// 			layout: 'home.hbs',
-	// 			law: multipleMongooseToObject(law),
-	// 		});
-	// 	});
-	// }
-
 	// Pagination
-	// router.get("/search/:page", 
+	// router.get("/search/:page") 
 	newpara(req, res, next){
-		const resultsPerPage = 5;
+		const resultsPerPage = 6;
 		let page = req.params.page >= 1 ? req.params.page : 1;
-		const query = req.query.search;
+		// const query = req.query.search;
 
 		page = page - 1
 
+		// Law.find({ name: query })
+		// .select('name')
 		Law.find({})
-		
-			.sort({ createdAt: 'desc' })
+			.sort({ updatedAt: 'desc' })
 			.limit(resultsPerPage)
 			.skip(resultsPerPage * page)
 			.then((law) => {

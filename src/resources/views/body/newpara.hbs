@@ -1,3 +1,41 @@
+<head>
+    <style>
+        .pagination{
+            width: fit-content;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-left: 0;
+            list-style: none;
+            border-radius: 0.25rem;
+            box-shadow: 0 1px 8px 0 rgb(0 0 0 / 8%);
+        }
+        .page-link{
+            line-height: 35px;
+            text-decoration: none;
+        }
+        .page-item{
+            height: 35px;
+            padding: 0 10px;
+        }
+
+        .page-item:first-child .page-link {
+            margin-left: 0;
+            border-top-left-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+        }
+        .page-item:hover {
+            color: #0056b3;
+            text-decoration: none;
+            background-color: #e9ecef;
+            border-color: #dee2e6;
+        }
+        .page-link:not(:disabled):not(.disabled) {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
 <div class="container js-modalContainer">
     <!-- slide show  -->
 
@@ -80,11 +118,11 @@
             {{#each law }}
             <div class="container-showpara">
                 <div class="container-showpara-content">
-                     <span style="font-weight: 500;">
+                    <span style="font-weight: 500;">
                         NGHỊ ĐỊNH_{{this.chuong}}_{{this.muc}}_{{this.dieu}}_{{this.khoan}}
                     </span>
                     <div>
-                        <h4 style="font-weight: 300">Ngày tạo: </h4>
+                        <h4 style="font-weight: 300">Ngày tạo: {{this.createdAt}}</h4>
                         <h4 style="font-weight: 300">Ngày cập nhật: {{this.updatedAt}}</h4>
                         <h4 style="font-weight: 300">Hiệu lực:</h4>
                         <h4 style="font-weight: 300">Áp dụng:</h4>
@@ -109,7 +147,18 @@
             </div>
             {{/each}}
 
+        <div>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="1">1</a></li>
+                <li class="page-item"><a class="page-link" href="2">2</a></li>
+                <li class="page-item"><a class="page-link" href="3">3</a></li>
+                <li class="page-item"><a class="page-link" href="4">4</a></li>
+                <li class="page-item"><a class="page-link" href="5">5</a></li>
+                <li class="page-item"><a class="page-link" href="6">6</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
         </div>
-
+        </div>
     </div>
 </div>
