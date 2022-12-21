@@ -51,8 +51,8 @@
     height: 36px;
     border: none;
     border-radius: 3px;
-    color: #fff;
-    background-color: #eb4e52;
+    color: var(--text-btn-search-color);
+    background-color: var(--btn-search-color);
     font-weight: bold;
     cursor: pointer;
     margin-left: 30px;
