@@ -8,7 +8,8 @@
 
 
 .container {
-    margin: auto;
+    padding: 100px 100px 0 100px;
+    margin: 0 auto;
     width: 88%;
 }
 
@@ -111,11 +112,11 @@
 
 .header-profile .cover-image .replace-image .row1 a {
     float: right;
-    background: #8b6441;
+    background: var(--btn-search-color);
     padding: 7px 15px;
     border-radius: 3px;
     opacity: 0.80;
-    color: #efccab;
+    color: var(--text-btn-search-color);
     font-size: 14px;
     text-decoration: none;
     z-index: 1;
@@ -215,7 +216,7 @@
 
 .submit button {
     background-color: #eb4e52;
-    color: #fff;
+    color: var(--text-btn-search-color);
     height: 36px;
     padding: 0 20px;
     border-radius: 3px;

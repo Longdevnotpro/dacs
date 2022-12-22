@@ -7,8 +7,8 @@
     width: 70%;
     height: 130px;
     border-radius: 1px;
-    background-color: #fff;
-    color: black;
+    background-color: var(--box-background);
+    color: var(--text-color);
     opacity: 0.9;
 }
 
@@ -44,7 +44,7 @@
 
 .input-search-content .btn-search span {
     background-color: var(--btn-search-color);
-    color: #fff;
+    color: var(--text-btn-search-color);
     padding: 0 5.58px;
 }
 
@@ -110,8 +110,8 @@
     border-radius: 2px;
     text-align: center;
     font-weight: 700;
-    background-color: #fff;
-    color: black;
+    background-color: var(--box-background);
+    color: var(--text-color);
     opacity: 0.9;
 }
 
@@ -122,10 +122,24 @@
     padding-bottom: 10px;
 }
 
+.content-2 .video-clip span {
+    background-color: var(--tittle-box);
+    display: block;
+    height: 2em;
+    padding: 5px 0;
+}
+
 .content-2 .favorite {
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 50%);
     -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%);
     -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content-2 .favorite span:first-child {
+    background-color: var(--tittle-box);
+    display: block;
+    height: 2em;
+    padding: 5px 0;
 }
 
 .content-2-slide {
@@ -151,6 +165,13 @@
     box-shadow: 0 1px 8px 0 rgb(0 0 0 / 50%);
     -webkit-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 30%);
     -moz-box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+.content-2 .more span {
+    background-color: var(--tittle-box);
+    display: block;
+    height: 2em;
+    padding: 5px 0;
 }
 
 .content-2 .more li {
@@ -207,7 +228,8 @@
     right: 0;
     margin-bottom: 100px;
     margin-right: 15px;
-    background-color: white;
+    background-color: var(--box-background);
+    color: black
 }
 
 #hotline-help .tittle-help {
@@ -233,7 +255,7 @@
     background-color: rgb(235, 78, 82);
     border: none;
     border-radius: 6px;
-    color: white;
+    color: var(--text-btn-search-color);
     cursor: pointer;
 }
 

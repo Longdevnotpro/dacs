@@ -30,36 +30,32 @@ class HomeController {
 	// 			});
 	// }
 
-	newpara(req, res) {
-		Law.find({}).then((law) => {
-			res.render('body/newpara', {
-				layout: 'home.hbs',
-				law: multipleMongooseToObject(law),
+	// Pagination
+	// router.get("/search/:page") 
+	newpara(req, res, next){
+		const resultsPerPage = 6;
+		let page = req.params.page >= 1 ? req.params.page : 1;
+		// const query = req.query.search;
+
+		page = page - 1
+
+		// Law.find({ name: query })
+		// .select('name')
+		Law.find({})
+			.sort({ updatedAt: 'desc' })
+			.limit(resultsPerPage)
+			.skip(resultsPerPage * page)
+			.then((law) => {
+				// return res.status(200).send(law);
+				res.render('body/newpara', {
+					layout: 'home.hbs',
+					law: multipleMongooseToObject(law),
+				});
+			})
+			.catch((err) => {
+				return res.status(500).send(err);
 			});
-		});
-	}
-	// newpara(req, res) {
-	// 	const aggregateQuery = Law.aggregate();
-
-	// 	Law.aggregatePaginate(aggregateQuery, {
-	// 		page: 1,
-	// 		limit: 5,
-	// 	})
-	// 		.then(function (results) {
-	// 			// res.json(results)
-	// 			console.log(results);
-	// 			res.render('body/newpara', {
-	// 			layout: 'home.hbs',
-	// 			results: multipleMongooseToObject(results),
-	// 		});
-
-
-	// 		})
-	// 		.catch(function (err) {
-	// 			console.log(err);
-	// 		});
-	// };
-
+	};
 
 	admin(req, res) {
 		Law.find({}).then((law) => {

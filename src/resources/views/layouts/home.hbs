@@ -184,6 +184,7 @@
     <script>
         //Start Switchtheme
         const modalContainer = document.querySelector('.js-modalContainer')
+        const modalFooter = document.querySelector('.js-modalFooter')
         function switchtheme() {
             document
                 .getElementById("wrap")
@@ -195,6 +196,9 @@
                 });
         };
         modalContainer.addEventListener("click", function switchtheme(event) {
+            event.stopPropagation()
+        })
+        modalFooter.addEventListener("click", function switchtheme(event) {
             event.stopPropagation()
         })
         // End Switchtheme

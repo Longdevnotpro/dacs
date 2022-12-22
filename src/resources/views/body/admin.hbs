@@ -4,8 +4,8 @@
     <!-- start search law -->
     <div class="road">
         <i class="fa-solid fa-house"></i>
-        <a href="/home" style="text-decoration: none; color: black">Trang chủ /</a>
-        <a href="#" style="text-decoration: none; color: black">Admin /</a>
+        <a href="/home">Trang chủ /</a>
+        <a href="#">Admin /</a>
     </div>
     <div class="search-content">
         <div class="input-search-content">
@@ -74,11 +74,11 @@
             <div class="container-showpara">
                 <div class="container-showpara-content">
                     <span style="font-weight: 500;">
-                        NGHỊ ĐỊNH_{{this.dieu}}_{{this.khoan}}
+                        NGHỊ ĐỊNH_{{this.chuong}}_{{this.muc}}_{{this.dieu}}_{{this.khoan}}
                     </span>
                     <div>
-                        <h4 style="font-weight: 300">Ngày tạo: {{this.createAt}}</h4>
-                        <h4 style="font-weight: 300">Ngày cập nhật:</h4>
+                        <h4 style="font-weight: 300">Ngày tạo: {{this.createdAt}}</h4>
+                        <h4 style="font-weight: 300">Ngày cập nhật: {{this.updatedAt}}</h4>
                         <h4 style="font-weight: 300">Hiệu lực:</h4>
                         <h4 style="font-weight: 300">Áp dụng:</h4>
 
@@ -110,7 +110,7 @@
 
         <div class="content2" style="margin-left: 20px">
             <a href="/home/admin/add" style="text-decoration: none;">
-                <span style="background-color: var(--btn-search-color);  color: #fff; padding: 10px 6px; font-weight: 600"> <i class="fa-solid fa-plus"></i>  Thêm điều luật</span>
+                <span style="background-color: var(--btn-search-color);  color: var(--text-btn-search-color); padding: 10px 6px; font-weight: 600"> <i class="fa-solid fa-plus"></i>  Thêm điều luật</span>
             </a>
         </div>
     </div>
