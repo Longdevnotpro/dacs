@@ -1,5 +1,7 @@
 const Law = require('../models/Law')
 const { multipleMongooseToObject } = require('../../util/mogoose')
+const { mongooseToObject } = require('../../util/mogoose');
+
 class SiteController {
 
     // 
@@ -18,7 +20,11 @@ class SiteController {
     }
 
     results(req, res) {
-        Law.find({ content: {$regex: req.query.noidung}, age: { $gte: 18 } })
+        Law.find({
+            $or: [
+                { content: {$regex: req.query.noidung}},
+             ]
+    })
             .then(law => {
                 res.render('body/search-unlog',
                     {
@@ -26,6 +32,16 @@ class SiteController {
                         law: multipleMongooseToObject(law)
                     })
             })
+    }
+
+    content(req,res){
+        Law.findById(req.params.id)
+			.then((law) => {
+				res.render('body/content-unlog', {
+                    layout: 'default-unlog.hbs',
+					law: mongooseToObject(law),
+				});
+			});
     }
 }
 
