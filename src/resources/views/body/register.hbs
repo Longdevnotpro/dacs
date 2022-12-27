@@ -1,3 +1,4 @@
+<head><title>Đăng ký</title></head>
 <div class='container'>
 	<div class='img'>
 		<img class='wave' src='/img/wave.png' />
@@ -6,13 +7,13 @@
 	<div class='login-content'>
         <form method="POST" action="/register/store">
 		<div class='form'>
-			<h2 class='title'>Register</h2>
+			<h2 class='title'>Đăng ký</h2>
 			<div class='input-div one'>
 				<div class='i'>
 					<i class='fas fa-user'></i>
 				</div>
 				<div class='div'>
-					<h5>Username</h5>
+					<h5>Tên tài khoản</h5>
 					<input type='text' class='input' id="name" name='name' required />
 				</div>
 			</div>
@@ -30,7 +31,7 @@
 					<i class='fas fa-lock'></i>
 				</div>
 				<div class='div'>
-					<h5>Password</h5>
+					<h5>Mật Khẩu</h5>
 					<input type='password' class='input' id="password" name='password' required />
 				</div>
 			</div>
@@ -39,12 +40,12 @@
 					<i class='fas fa-lock'></i>
 				</div>
 				<div class='div'>
-					<h5>Repeat Password</h5>
+					<h5>Nhập lại mật khẩu</h5>
 					<input type='password' class='input' id="repassword" name='repassword' required />
 				</div>
 			</div>
-			<p>Do you have an account? <a href='/login'>Sign in</a></p>
-			<button class="btn btn btn--success" id='register-btn' type="submit" onclick="showSuccessToast()">Register</button>
+			<p>Bạn đã có tài khoản chưa? <a href='/login'>Đăng nhập</a></p>
+			<button class="btn btn btn--success" id='register-btn' type="submit" onclick="showSuccessToast()">Đăng Ký</button>
 		</div>
         </form>
 	</div>

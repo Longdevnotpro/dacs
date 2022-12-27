@@ -366,9 +366,9 @@ input:checked+.slider:before {
 footer {
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    height: 240px;
     width: 100%;
-    padding: 25px 0;
+    padding: 18px 0;
     background-color: var(--header-color);
     color: var(--text-color-header);
     bottom: 0;
@@ -380,12 +380,14 @@ footer h3 {
     border-bottom: 3px solid antiquewhite;
     font-size: 1.05rem;
     opacity: 0.9;
+    padding: 10px 0;
 }
 
 footer h4 {
     padding-bottom: 5px;
     font-size: 0.9rem;
     font-weight: 450;
+        padding: 10px 0;
 }
 
 .address {
