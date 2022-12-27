@@ -1,4 +1,5 @@
 const Law = require('../models/Law')
+var path = require('path');
 const { multipleMongooseToObject } = require('../../util/mogoose')
 const { mongooseToObject } = require('../../util/mogoose');
 
@@ -42,6 +43,14 @@ class SiteController {
 					law: mongooseToObject(law),
 				});
 			});
+    }
+
+    download(req,res){
+        const a = [req.params.slug, 'pdf'];
+        const b = a.join('.');
+
+        res.download(path.join('/dacs/dacs/src/public/file/',b))
+        
     }
 }
 

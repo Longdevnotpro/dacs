@@ -6,6 +6,7 @@ var router = express.Router();
 var siteController = require('../app/controllers/SiteController')
 
 router.get('/:id/noidung',siteController.content)
+router.get('/:slug/dowload',siteController.download)
 
 router.get('/ketqua', siteController.results)
 

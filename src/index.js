@@ -5,7 +5,7 @@ const morgan = require('morgan')
 const route = require('./route')
 const methodOverride = require('method-override')
 const db  = require('./config/db');
-
+const path = require('path');
 // CONNECT DB 
 
 db.connect();
