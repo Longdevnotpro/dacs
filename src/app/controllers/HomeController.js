@@ -48,6 +48,7 @@ class HomeController {
 				res.render('body/newpara', {
 					layout: 'home.hbs',
 					law: multipleMongooseToObject(law),
+					
 				});
 			})
 			.catch((err) => {
