@@ -8,7 +8,7 @@
         <i class="fa-solid fa-house"></i>
         <a href="#">Trang chủ /</a>
     </div>
-    <form action="/noidung" name="form-behave" method="get">
+    <form action="/ketqua" name="form-behave" method="get">
         <div class="search-content">
             <div class="input-search-content">
                 <div class="btn-search">
@@ -114,7 +114,7 @@
             {{#each law }}
             <div class="container-showpara" id="container-showpara">
                 <div class="container-showpara-content">
-                    <span style="font-weight: 500;">
+                    <span style="font-weight: 500; ">
                         NGHỊ ĐỊNH_{{this.chuong}}_{{this.muc}}_{{this.dieu}}_{{this.khoan}}
                     </span>
                     <div>
@@ -129,7 +129,7 @@
                 <div class="container-showpara-function">
                     <div class="function-div">
                         <i class="fa-solid fa-arrows-to-circle"></i>
-                        <h4>Nội dung</h4>
+                        <a href="/{{this._id}}/noidung"><h4>Nội dung</h4></a>
                     </div>
                     <div class="function-div">
                         <i class="fa-solid fa-download"></i>

@@ -1,10 +1,13 @@
 var express = require('express'); 
 const route = require('.');
+const SiteController = require('../app/controllers/SiteController');
 var router = express.Router();
 
 var siteController = require('../app/controllers/SiteController')
 
-router.get('/noidung', siteController.results)
+router.get('/:id/noidung',siteController.content)
+
+router.get('/ketqua', siteController.results)
 
 router.get('/',siteController.index)
 
