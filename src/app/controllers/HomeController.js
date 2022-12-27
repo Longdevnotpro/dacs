@@ -5,7 +5,8 @@ const User = require('../models/User');
 
 class HomeController {
 	//
-	show(req, res) {
+	show(req, res, next)
+	{
 		Law.find({}).then((law) => {
 			res.render('body/default', {
 				layout: 'home.hbs',
@@ -13,8 +14,32 @@ class HomeController {
 			});
 		});
 
-		// res.render('body/default',{layout: 'default-unlog.hbs'})
+	// 	// res.render('body/default',{layout: 'default-unlog.hbs'})
 	}
+	// {
+	// 	const resultsPerPage = 6;
+	// 	let page = req.params.page >= 1 ? req.params.page : 1;
+	// 	// const query = req.query.search;
+
+	// 	page = page - 1
+
+	// 	// Law.find({ name: query })
+	// 	// .select('name')
+	// 	Law.find({})
+	// 		.sort({ updatedAt: 'desc' })
+	// 		.limit(resultsPerPage)
+	// 		.skip(resultsPerPage * page)
+	// 		.then((law) => {
+	// 			res.render('body/default', {
+	// 				layout: 'home.hbs',
+	// 				law: multipleMongooseToObject(law),
+	// 			});
+	// 		})
+	// 		.catch((err) => {
+	// 			return res.status(500).send(err);
+	// 		});
+	// };
+	
 
 	//
 	// setting_profile(req, res) {
@@ -31,7 +56,6 @@ class HomeController {
 	}
 
 	// Pagination
-	// router.get("/search/:page") 
 	newpara(req, res, next){
 		const resultsPerPage = 6;
 		let page = req.params.page >= 1 ? req.params.page : 1;
