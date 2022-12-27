@@ -17,18 +17,18 @@ class HomeController {
 	}
 
 	//
-	setting_profile(req, res) {
-		res.render('body/profile', { layout: 'home.hbs' });
-	}
-
-	// edit_profile(req, res) {
-	//     User.findById(req.params.id).then((User) => {
-	//         res.render('body/profile', {
-	// 					layout: 'home.hbs',
-	// 					user: mongooseToObject(User),
-	// 				});
-	// 			});
+	// setting_profile(req, res) {
+	// 	res.render('body/profile', { layout: 'home.hbs' });
 	// }
+
+	edit_profile(req, res) {
+	    User.findById(req.params.id).then((User) => {
+	        res.render('body/profile', {
+						layout: 'home.hbs',
+						user: mongooseToObject(User),
+					});
+				});
+	}
 
 	// Pagination
 	// router.get("/search/:page") 

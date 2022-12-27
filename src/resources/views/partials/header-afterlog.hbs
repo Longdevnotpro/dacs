@@ -12,9 +12,16 @@
             <button class="user" onclick="myFunction()">
                 <img src="/img/user.png" alt="" style="border-radius: 50%; ">
             </button>
-            <div id="userList">
+            <div id="userList" >
                 <ul>
-                    <li><a href="/home/profile">Quản lý tài khoản</a></li>
+                    <li>
+                    {{#each law}}
+                        <div>
+                            <a href="/home/{{this._id}}/profile">Quản lý tài khoản</a>
+
+                        </div>
+                    {{/each}}
+                    </li>
                     <li><a href="/home/admin">Admin</a></li>
                     <li>
                         <label class="switch">
