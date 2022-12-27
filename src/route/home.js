@@ -16,7 +16,8 @@ router.get('/admin/:id/edit',homeController.edit)
 router.post('/admin/store',homeController.store)
 router.get('/admin/add',homeController.add)
 
-router.get('/:id/profile',homeController.edit_profile)
+// router.get('/:id/profile',homeController.edit_profile)
+router.get('/profile',homeController.edit_profile)
 
 router.get('/admin', homeController.admin);
 
