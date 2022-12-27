@@ -1,0 +1,87 @@
+<head>
+    <style>
+        .wrap-content {
+            display: flex;
+            height: 880px;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .content {
+            margin-top: 100px;
+            height: 700px;
+            width: 900px;
+            
+            border: 1px solid black;
+        }
+
+        h2,
+        h3,
+        h4 {
+            padding: 10px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: left;
+            padding:  4px;
+        }
+
+        table{
+            text-align: center;
+            width: 97%;
+            margin: 10px;
+        }
+
+        
+    </style>
+</head>
+<div class="wrap-content">
+    <div class="content">
+        <h2>
+            Thông tư 75/2022/TT-BTC quy định mức thu, chế độ thu, nộp và quản lý lệ phí đăng ký cư trú
+        </h2>
+        <h3>
+            THUỘC TÍNH THÔNG TƯ 75/2022/TT-BTC
+        </h3>
+        <h4>Thông tư 75/2022/TT-BTC của Bộ Tài chính về việc quy định mức thu, chế độ thu, nộp và quản lý lệ phí đăng ký
+            cư trú
+        </h4>
+
+        <table>
+            <tr>
+                <th>Chương</th>
+                <td>{{law.chuong}}</td>
+                <th>Mức giá dưới:</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Mục</th>
+                <td>1</td>
+                <th>Mức giá dưới:</th>
+                <td>1000000</td>
+            </tr>
+            <tr>
+                <th>Điều</th>
+                <td>1</td>
+                <th>Ngày ban hành:</th>
+                <td>1</td>
+            </tr>
+            <tr>
+                <th>Khoản</th>
+                <td>1</td>
+                <th>Hiệu lực:</th>
+                <td>1</td>
+            </tr>
+
+        </table>
+
+        <div class="details-content">
+            <h2>Nội dung nghị định</h2>
+            <span>{{law.content}}</span>
+        </div>
+    </div>
+</div>
