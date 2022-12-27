@@ -5,8 +5,7 @@ const User = require('../models/User');
 
 class HomeController {
 	//
-	show(req, res, next)
-	{
+	show(req, res, next) {
 		Law.find({}).then((law) => {
 			res.render('body/default', {
 				layout: 'home.hbs',
@@ -14,7 +13,7 @@ class HomeController {
 			});
 		});
 
-	// 	// res.render('body/default',{layout: 'default-unlog.hbs'})
+		// 	// res.render('body/default',{layout: 'default-unlog.hbs'})
 	}
 
 	//
@@ -23,16 +22,16 @@ class HomeController {
 	// }
 
 	edit_profile(req, res) {
-	    User.findById(req.params.id).then((User) => {
-	        res.render('body/profile', {
-						layout: 'home.hbs',
-						user: mongooseToObject(User),
-					});
-				});
+		User.findById(req.params.id).then((User) => {
+			res.render('body/profile', {
+				layout: 'home.hbs',
+				user: mongooseToObject(User),
+			});
+		});
 	}
 
 	// Pagination
-	newpara(req, res, next){
+	newpara(req, res, next) {
 		const resultsPerPage = 6;
 		let page = req.params.page >= 1 ? req.params.page : 1;
 		// const query = req.query.search;
@@ -73,7 +72,6 @@ class HomeController {
 	// [POST] /admin/store
 	store(req, res) {
 		const law = new Law(req.body);
-
 		setTimeout(() => {
 			law.save();
 			res.redirect('/home/admin/add');
@@ -95,12 +93,12 @@ class HomeController {
 	// [PUT] /admin/edit/:id
 	update(req, res) {
 		Law.updateOne({ _id: req.params.id }, req.body)
-			.then(() =>{
+			.then(() => {
 				setTimeout(() => {
-					res.redirect('/home/admin')	
+					res.redirect('/home/admin')
 				}, 1500);
 			})
-			
+
 	}
 
 	//Xóa
@@ -119,6 +117,16 @@ class HomeController {
 			});
 		});
 	}
+
+	content(req,res){
+        Law.findById(req.params.id)
+			.then((law) => {
+				res.render('body/content-unlog', {
+                    layout: 'default-unlog.hbs',
+					law: mongooseToObject(law),
+				});
+			});
+    }
 }
 
 module.exports = new HomeController;
