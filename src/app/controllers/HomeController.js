@@ -57,12 +57,24 @@ class HomeController {
 	};
 
 	admin(req, res) {
-		Law.find({}).then((law) => {
-			res.render('body/admin', {
-				layout: 'home.hbs',
-				law: multipleMongooseToObject(law),
+		const resultsPerPage = 6;
+		let page = req.params.page >= 1 ? req.params.page : 1;
+
+		page = page - 1;
+		
+		Law.find({})
+			.sort({ updatedAt: 'desc' })
+			.limit(resultsPerPage)
+			.skip(resultsPerPage * page)
+			.then((law) => {
+				res.render('body/admin', {
+					layout: 'home.hbs',
+					law: multipleMongooseToObject(law),
+				});
+			})
+			.catch((err) => {
+				return res.status(500).send(err);
 			});
-		});
 	}
 
 	//Thêm
