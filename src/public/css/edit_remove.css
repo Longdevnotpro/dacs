@@ -34,10 +34,11 @@
 
 .add .form-control {
     width: 70%;
-    height: 30px;
+    height: 36px;
     margin-top: 5px;
     margin-bottom: 10px;
     padding-left: 10px;
+    outline: none;
 }
 
 .add .btnFuntion {
