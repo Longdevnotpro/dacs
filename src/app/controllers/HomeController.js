@@ -99,7 +99,6 @@ class HomeController {
 					res.redirect('/home/admin')
 				}, 1500);
 			})
-
 	}
 
 	//Xóa

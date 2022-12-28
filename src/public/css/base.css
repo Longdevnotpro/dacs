@@ -259,7 +259,14 @@ input:checked+.slider:before {
 .container-showpara-content {
     display: flex;
     justify-content: space-between;
+}
 
+.container-showpara-content span{
+    width: 78%;
+}
+
+.container-showpara-content div{
+    width: 22%;
 }
 
 .container-showpara-function {
