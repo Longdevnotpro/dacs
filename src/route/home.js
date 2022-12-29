@@ -19,7 +19,7 @@ router.get('/admin/add',homeController.add)
 // router.get('/:id/profile',homeController.edit_profile)
 router.get('/profile',homeController.edit_profile)
 
-router.get('/admin/:page', homeController.admin);
+router.get('/admin', homeController.admin);
 
 router.get('/newpara/:page', homeController.newpara);
 

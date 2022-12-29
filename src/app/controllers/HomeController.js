@@ -57,15 +57,15 @@ class HomeController {
 	};
 
 	admin(req, res) {
-		const resultsPerPage = 6;
-		let page = req.params.page >= 1 ? req.params.page : 1;
+		// const resultsPerPage = 6;
+		// let page = req.params.page >= 1 ? req.params.page : 1;
 
-		page = page - 1;
+		// page = page - 1;
 		
 		Law.find({})
 			.sort({ updatedAt: 'desc' })
-			.limit(resultsPerPage)
-			.skip(resultsPerPage * page)
+			// .limit(resultsPerPage)
+			// .skip(resultsPerPage * page)
 			.then((law) => {
 				res.render('body/admin', {
 					layout: 'home.hbs',

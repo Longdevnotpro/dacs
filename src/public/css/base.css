@@ -233,7 +233,7 @@ input:checked+.slider:before {
     color: var(--text-color);
 }
 
-.road a{
+.road a {
     text-decoration: none;
     color: var(--text-color);
 }
@@ -261,12 +261,16 @@ input:checked+.slider:before {
     justify-content: space-between;
 }
 
-.container-showpara-content span{
+.container-showpara-content span {
     width: 78%;
 }
 
-.container-showpara-content div{
+.container-showpara-content div {
     width: 22%;
+}
+
+.container-showpara-content div h4 {
+    padding-bottom: 5px;
 }
 
 .container-showpara-function {
@@ -300,7 +304,7 @@ input:checked+.slider:before {
     font-weight: 500;
 }
 
-.content2 a:hover{
+.content2 a:hover {
     opacity: 0.9;
 }
 
@@ -394,7 +398,7 @@ footer h4 {
     padding-bottom: 5px;
     font-size: 0.9rem;
     font-weight: 450;
-        padding: 10px 0;
+    padding: 10px 0;
 }
 
 .address {
