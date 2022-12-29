@@ -48,8 +48,8 @@ class SiteController {
     download(req,res){
         const a = [req.params.slug, 'pdf'];
         const b = a.join('.');
-        res.download(path.join('/Workspace/dacs/src/public/file/', b));
-        // res.download(path.join('/dacs/dacs/src/public/file/',b));
+        // res.download(path.join('/Workspace/dacs/src/public/file/', b));
+        res.download(path.join('./src/public/file',b));
         
     }
 }

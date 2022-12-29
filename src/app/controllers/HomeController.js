@@ -134,7 +134,7 @@ class HomeController {
         Law.findById(req.params.id)
 			.then((law) => {
 				res.render('body/content-unlog', {
-                    layout: 'default-unlog.hbs',
+                    layout: 'home.hbs',
 					law: mongooseToObject(law),
 				});
 			});
